@@ -4,31 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e62bb64-4705-4c0d-8f75-257ebfa55d6c" name="Changes" comment="" />
+    <list default="true" id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drivers/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/AddEmployeePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LoginLogoutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/PIMPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NitaNabaDev1997"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NitaNabaDev1997/OrangeHRM_Selenium_Automate.git",
-    "accountId": "a260d0c4-9147-46e8-8dc7-e7d24631dba4"
-  }
-}]]></component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2pqNqvC9eyMTaNKrDDSZSO3ErfP" />
+  <component name="ProjectId" id="2pqSPDcjnkR2EQK3HpTHdhlxoNZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,22 +50,135 @@
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AddEmployee.createEmployee.executor": "Run",
+    "TestNG.AddEmployee.createemployeedetail.executor": "Run",
+    "TestNG.AddEmployee.executor": "Run",
+    "TestNG.AddEmployee.searchEmployee.executor": "Run",
+    "TestNG.AddEmployee.searchEmployee_positive.executor": "Run",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OrangeHRM_Selenium_Automate",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "last_opened_file_path": "D:/OrangeHRM_Selenium_Automate"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SeleniumOrangeHRM\Drivers" />
+      <recent name="D:\SeleniumOrangeHRM\src\test\java" />
+      <recent name="D:\SeleniumOrangeHRM\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SeleniumOrangeHRM\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EmployeeTCs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.baseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.baseTest.EmployeeTCs" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTCs.createEmployee" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.baseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.baseTest.EmployeeTCs" />
+      <option name="METHOD_NAME" value="createEmployee" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTCs.createemployeedetail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.baseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.baseTest.EmployeeTCs" />
+      <option name="METHOD_NAME" value="createemployeedetail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTCs.searchEmployee" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.baseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.baseTest.EmployeeTCs" />
+      <option name="METHOD_NAME" value="searchEmployee" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTCs.searchEmployee_positive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.baseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.baseTest.EmployeeTCs" />
+      <option name="METHOD_NAME" value="searchEmployee_positive" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.EmployeeTCs.searchEmployee_positive" />
+        <item itemvalue="TestNG.EmployeeTCs" />
+        <item itemvalue="TestNG.EmployeeTCs.createEmployee" />
+        <item itemvalue="TestNG.EmployeeTCs.searchEmployee" />
+        <item itemvalue="TestNG.EmployeeTCs.createemployeedetail" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9e62bb64-4705-4c0d-8f75-257ebfa55d6c" name="Changes" comment="" />
-      <created>1733489845519</created>
+      <changelist id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="" />
+      <created>1733492091458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733489845519</updated>
+      <updated>1733492091458</updated>
     </task>
     <servers />
   </component>

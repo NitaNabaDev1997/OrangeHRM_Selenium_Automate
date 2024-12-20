@@ -1,0 +1,79 @@
+package E2EFramework.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
+
+public class SearchEmployee extends BasePage {
+    public static WebDriver driver;
+    public SearchEmployee(WebDriver driver)
+    {
+      super();
+      this.driver=driver;
+    }
+
+    public void searchemployee()
+    {
+    driver.findElement(By.linkText("Employee List")).click();
+    driver.findElement(By.xpath("(//input[@placeholder='Type for hints...'])[1]")).sendKeys("TestName1");
+    driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]")).sendKeys("0413");
+    //selectionEmployeestatus("Freelance");
+    driver.findElement(By.xpath("//button[@type='submit']")).click();
+    }
+
+
+    public WebElement deletemsgbutton()
+    {
+       WebElement deletebutton =driver.findElement(By.xpath("//button[contains(.,'Delete Selected')]"));
+        System.out.println("Delete button displayed"+deletebutton.isEnabled());
+       return deletebutton;
+    }
+
+   /* public WebElement selectionEmployeestatus(String statusname) {
+        WebElement dropdown_employeestatus = driver.findElement(By.xpath("(//div[@class='oxd-select-text-input'])[1]"));
+        Select employeestatus = new Select(dropdown_employeestatus);
+        employeestatus.selectByVisibleText(statusname);
+        WebElement selectedoption = employeestatus.getFirstSelectedOption();
+        return selectedoption;
+    }*/
+   public void selectionEmployeestatus(String statusname) {
+      driver.findElement(By.xpath("(//div[@class='oxd-select-text-input'])[1]")).click();
+       List<WebElement> dropdown_employeestatus=driver.findElements(By.xpath("//div[@class='oxd-select-option']"));
+       for (WebElement element : dropdown_employeestatus) {
+           if (element.getText().equals(statusname)) {
+               element.click();
+               break;
+           }
+       }
+   }
+
+   public String verifymsg()
+   {
+      WebElement toast= driver.findElement(By.cssSelector("p.oxd-text--toast-message.oxd-toast-content-text"));
+      String toastmsg=toast.getText();
+      return toastmsg;
+   }
+
+    public void selectcheckbox()
+    {
+        WebElement table=driver.findElement(By.xpath("//div[@class='oxd-table-body']"));
+        List<WebElement> rows=table.findElements(By.xpath("//div[@role='row']"));
+        for(WebElement element:rows){
+            if(element.getText().contains("TestName1"))
+            {
+                driver.findElement(By.xpath("//div[@class='oxd-table-card-cell-checkbox']")).click();
+            }
+        }
+    }
+    
+    public void DeleteEmployee()
+    {
+      driver.findElement(By.xpath("//button[contains(.,'Yes, Delete')]")).click();
+      
+    }
+
+
+
+}

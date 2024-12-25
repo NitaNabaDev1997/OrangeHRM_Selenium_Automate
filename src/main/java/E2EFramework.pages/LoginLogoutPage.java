@@ -10,7 +10,11 @@ public static WebDriver driver;
        this.driver=driver;
     }
 
-    public static void login(String username, String password)
+    public void launchbrowserUrl()
+    {
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    }
+    public void login(String username, String password)
     {
        driver.findElement(By.name("username")).sendKeys("Admin");
        driver.findElement(By.name("password")).sendKeys("admin123");

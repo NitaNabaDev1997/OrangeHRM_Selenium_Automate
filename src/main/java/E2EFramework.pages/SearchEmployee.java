@@ -18,13 +18,13 @@ public class SearchEmployee extends BasePage {
     {
     driver.findElement(By.linkText("Employee List")).click();
     driver.findElement(By.xpath("(//input[@placeholder='Type for hints...'])[1]")).sendKeys("TestName1");
-    driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]")).sendKeys("0413");
+    driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]")).sendKeys("0450");
     //selectionEmployeestatus("Freelance");
     driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
 
-    public WebElement deletemsgbutton()
+    public WebElement deletebutton()
     {
        WebElement deletebutton =driver.findElement(By.xpath("//button[contains(.,'Delete Selected')]"));
         System.out.println("Delete button displayed"+deletebutton.isEnabled());
@@ -68,10 +68,11 @@ public class SearchEmployee extends BasePage {
         }
     }
     
-    public void DeleteEmployee()
+    public String DeleteEmployee()
     {
       driver.findElement(By.xpath("//button[contains(.,'Yes, Delete')]")).click();
-      
+      String deleteempmsg=driver.findElement(By.cssSelector("p.oxd-text.oxd-text--p.oxd-text--toast-message.oxd-toast-content-text")).getText();
+      return deleteempmsg;
     }
 
 

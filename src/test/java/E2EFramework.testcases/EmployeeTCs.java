@@ -10,7 +10,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.*;
 public class EmployeeTCs extends BaseTests {
    // WebDriver driver;
-    private static Logger logger= LogManager.getLogger(EmployeeTCs.class);
+
 
     @Test
     public void loginValid() throws IOException {

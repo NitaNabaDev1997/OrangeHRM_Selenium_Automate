@@ -1,9 +1,7 @@
-[INFO ] 2024-12-24 18:48:14.972 [main] EmployeeTCs - Login Successful
-[INFO ] 2024-12-28 20:20:03.935 [main] EmployeeTCs - Driver initialized
-[INFO ] 2024-12-28 20:20:08.396 [main] EmployeeTCs - browser lauched
-[INFO ] 2024-12-28 20:20:11.747 [main] EmployeeTCs - Login Successful
-[INFO ] 2024-12-29 00:26:29.744 [main] EmployeeTCs - Driver initialized
-[INFO ] 2024-12-29 00:26:35.897 [main] EmployeeTCs - browser lauched
-[INFO ] 2024-12-29 00:26:35.897 [main] EmployeeTCs - User launches edge browser
-[INFO ] 2024-12-29 00:26:35.924 [main] EmployeeTCs - Url is open and printed in console
-[INFO ] 2024-12-29 00:26:39.549 [main] EmployeeTCs - login button clicked
+[INFO ] 2025-01-03 00:00:56.742 [main] BaseTests - Driver initialized
+[INFO ] 2025-01-03 00:01:00.578 [main] BaseTests - browser lauched
+[INFO ] 2025-01-03 00:01:00.578 [main] BaseTests - User launches edge browser
+[INFO ] 2025-01-03 00:01:00.611 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-01-03 00:01:03.750 [main] BaseTests - login button clicked
+[INFO ] 2025-01-03 00:01:07.867 [main] BaseTests - button is clicked
+[INFO ] 2025-01-03 00:01:09.046 [main] BaseTests - Successfully Saved

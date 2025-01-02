@@ -1,7 +1,9 @@
 package E2EFramework.stepDefinitions;
 
 import E2EFramework.baseTest.BaseTests;
+import E2EFramework.pages.AddEmployeePage;
 import E2EFramework.pages.LoginLogoutPage;
+import E2EFramework.pages.PIMPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +14,7 @@ import java.io.IOException;
 
 public class Steps extends BaseTests {
     LoginLogoutPage loginLogoutPage;
+    AddEmployeePage addEmployeePage;
 @Given("User Launch Edge Browser")
     public void user_launch_browser() throws IOException {
     loginLogoutPage = launchbrowser();
@@ -40,5 +43,47 @@ public class Steps extends BaseTests {
     public void pageTitleShouldBe(String title) {
     String logintitle=driver.getTitle();
     Assert.assertEquals(logintitle,title);
+    }
+
+    @When("User click on profile link")
+    public void userClickOnProfileLink() {
+        loginLogoutPage.clickProfile();
+    }
+
+    @And("click on Logout link")
+    public void clickOnLogoutLink() {
+    loginLogoutPage.clicklogout();
+    }
+
+    @Then("close the browser")
+    public void closeTheBrowser() {
+   driver.quit();
+    }
+
+    @When("User click on PIM item")
+    public void userClickOnPIMItem() {
+    PIMPage pimPage= new PIMPage(driver);
+    pimPage.clickPIMpage();
+    }
+
+    @And("User click on AddEmployee tab")
+    public void userClickOnAddEmployeeTab() throws InterruptedException {
+       addEmployeePage=new AddEmployeePage(driver) ;
+        addEmployeePage.addEmployee();
+    }
+
+    @Then("^User fills the details of new Employee (.+) and (.+) and (.+)$")
+    public void userFillsTheDetailsOfNewEmployeeFirstnameMidnameLastname(String fname,String mname,String lname) {
+        addEmployeePage.addemployeewithoutlogindetail(fname,mname,lname);
+    }
+
+    @And("User clicks on save button")
+    public void userClicksOnSaveButton() {
+        logger.info("button is clicked");
+    }
+
+    @Then("User is added successfully")
+    public void userIsAddedSuccessfully() {
+        logger.info(addEmployeePage.verifysucessmsg());
     }
 }

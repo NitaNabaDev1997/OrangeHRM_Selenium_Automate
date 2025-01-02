@@ -10,7 +10,7 @@ public class SearchEmployee extends BasePage {
     public static WebDriver driver;
     public SearchEmployee(WebDriver driver)
     {
-      super();
+      super(driver);
       this.driver=driver;
     }
 

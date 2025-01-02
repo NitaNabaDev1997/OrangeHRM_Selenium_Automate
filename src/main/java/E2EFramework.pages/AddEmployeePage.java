@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -13,17 +12,23 @@ public class AddEmployeePage extends BasePage{
 public static WebDriver driver;
     public AddEmployeePage(WebDriver driver)
     {
-        super();
+        super(driver);
         this.driver=driver;
     }
 
-    public void addemployeewithoutlogindetail()
+    public void addEmployee()
     {
-        driver.findElement(By.name("firstName")).sendKeys("TestName1");
-        driver.findElement(By.name("middleName")).sendKeys("TestName2");
-        driver.findElement(By.name("lastName")).sendKeys("TestName3");
+        driver.findElement(By.linkText("Add Employee")).click();
+    }
+
+    public void addemployeewithoutlogindetail(String firstname,String middlename,String lastname)
+    {
+        driver.findElement(By.name("firstName")).sendKeys(firstname);
+        driver.findElement(By.name("middleName")).sendKeys(middlename);
+        driver.findElement(By.name("lastName")).sendKeys(lastname);
         driver.findElement(By.xpath("//button[@type='submit']")).click();
          }
+
 
     public String verifysucessmsg()
     {

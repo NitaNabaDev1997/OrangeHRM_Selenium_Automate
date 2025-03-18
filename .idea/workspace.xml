@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="">
+<<<<<<< HEAD
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 8153a8404ec4864ea6903021a37b0433eeb12b97
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +53,10 @@
     "Maven.SeleniumOrangeHRM [clean].executor": "Run",
     "Maven.SeleniumOrangeHRM [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
+=======
     "RunOnceActivity.git.unshallow": "true",
+>>>>>>> 8153a8404ec4864ea6903021a37b0433eeb12b97
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.AddEmployee.createEmployee.executor": "Run",
     "TestNG.AddEmployee.createemployeedetail.executor": "Run",
@@ -62,8 +68,12 @@
     "TestNG.EmployeeTCs.loginValid.executor": "Run",
     "TestNG.EmployeeTCs.searchEmployee_positive.executor": "Run",
     "TestNG.TestNGTestRunner.executor": "Run",
+<<<<<<< HEAD
+    "git-widget-placeholder": "dev",
+=======
     "git-widget-placeholder": "Merging staging",
     "ignore.virus.scanning.warn.message": "true",
+>>>>>>> 8153a8404ec4864ea6903021a37b0433eeb12b97
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/OrangeHRM_Selenium_Automate",
     "project.structure.last.edited": "Modules",

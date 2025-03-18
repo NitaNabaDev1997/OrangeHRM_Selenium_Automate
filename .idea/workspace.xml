@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Features/Employee.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Mylogs.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/AddEmployeePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LoginLogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LoginLogoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/PIMPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/PIMPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework.testcases/EmployeeTCs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework.testcases/EmployeeTCs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/baseTest/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/baseTest/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,31 +43,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SeleniumOrangeHRM [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SeleniumOrangeHRM [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.AddEmployee.createEmployee.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AddEmployee.createemployeedetail.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AddEmployee.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AddEmployee.searchEmployee.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AddEmployee.searchEmployee_positive.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.EmployeeTCs.createEmployee.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.EmployeeTCs.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.EmployeeTCs.loginValid.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.EmployeeTCs.searchEmployee_positive.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNGTestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/OrangeHRM_Selenium_Automate&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.SeleniumOrangeHRM [clean].executor": "Run",
+    "Maven.SeleniumOrangeHRM [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AddEmployee.createEmployee.executor": "Run",
+    "TestNG.AddEmployee.createemployeedetail.executor": "Run",
+    "TestNG.AddEmployee.executor": "Run",
+    "TestNG.AddEmployee.searchEmployee.executor": "Run",
+    "TestNG.AddEmployee.searchEmployee_positive.executor": "Run",
+    "TestNG.EmployeeTCs.createEmployee.executor": "Run",
+    "TestNG.EmployeeTCs.executor": "Run",
+    "TestNG.EmployeeTCs.loginValid.executor": "Run",
+    "TestNG.EmployeeTCs.searchEmployee_positive.executor": "Run",
+    "TestNG.TestNGTestRunner.executor": "Run",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/OrangeHRM_Selenium_Automate",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SeleniumOrangeHRM\src\test\java" />

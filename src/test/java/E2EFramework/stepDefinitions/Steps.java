@@ -15,7 +15,7 @@ import java.io.IOException;
 public class Steps extends BaseTests {
     LoginLogoutPage loginLogoutPage;
     AddEmployeePage addEmployeePage;
-@Given("User Launch Edge Browser")
+ @Given("User Launch Edge Browser")
     public void user_launch_browser() throws IOException {
     loginLogoutPage = launchbrowser();
     logger.info("User launches edge browser");

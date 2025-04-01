@@ -20,7 +20,7 @@ public static WebDriver driver;
         prop.load(fileInputStream);
         String browsername = prop.getProperty("browser");
         if (browsername.equalsIgnoreCase("Edge")) {
-            WebDriverManager.edgedriver().setup();
+           // WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
         }
         else if(browsername.equalsIgnoreCase("firefox"))

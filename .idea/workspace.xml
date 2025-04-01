@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="">
-<<<<<<< HEAD
-=======
+    <list default="true" id="0910790b-7be1-41f8-9551-4fa64555ba9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 8153a8404ec4864ea6903021a37b0433eeb12b97
+      <change beforePath="$PROJECT_DIR$/logs/Mylogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Mylogs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework.testcases/EmployeeTCs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework.testcases/EmployeeTCs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +39,9 @@
     &quot;accountId&quot;: &quot;a260d0c4-9147-46e8-8dc7-e7d24631dba4&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -49,36 +53,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.SeleniumOrangeHRM [clean].executor": "Run",
-    "Maven.SeleniumOrangeHRM [install].executor": "Run",
+    "Cucumber Java.Scenario: Testing login functionality using valid Credential.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-<<<<<<< HEAD
-=======
     "RunOnceActivity.git.unshallow": "true",
->>>>>>> 8153a8404ec4864ea6903021a37b0433eeb12b97
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AddEmployee.createEmployee.executor": "Run",
-    "TestNG.AddEmployee.createemployeedetail.executor": "Run",
-    "TestNG.AddEmployee.executor": "Run",
-    "TestNG.AddEmployee.searchEmployee.executor": "Run",
-    "TestNG.AddEmployee.searchEmployee_positive.executor": "Run",
-    "TestNG.EmployeeTCs.createEmployee.executor": "Run",
-    "TestNG.EmployeeTCs.executor": "Run",
-    "TestNG.EmployeeTCs.loginValid.executor": "Run",
-    "TestNG.EmployeeTCs.searchEmployee_positive.executor": "Run",
+    "TestNG.Steps.executor": "Run",
+    "TestNG.TestNGTestRunner (1).executor": "Run",
     "TestNG.TestNGTestRunner.executor": "Run",
-<<<<<<< HEAD
     "git-widget-placeholder": "dev",
-=======
-    "git-widget-placeholder": "Merging staging",
-    "ignore.virus.scanning.warn.message": "true",
->>>>>>> 8153a8404ec4864ea6903021a37b0433eeb12b97
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OrangeHRM_Selenium_Automate",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -94,47 +76,33 @@
       <recent name="D:\SeleniumOrangeHRM\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGTestRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Testing login functionality using valid Credential">
+    <configuration name="Scenario: Testing login functionality using valid Credential" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Login.feature" />
+      <option name="GLUE" value="src/test/java/E2EFramework/stepDefinitions/Steps.java" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SeleniumOrangeHRM" />
+      <option name="NAME_FILTER" value="^Testing login functionality using valid Credential$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Testing login functionality using valid Credential$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: Testing login functionality using valid Credential" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="D:\OrangeHRM_Selenium_Automate" />
       <option name="GLUE" value="src/test/java/E2EFramework/stepDefinitions/Steps.java" />
       <shortenClasspath name="NONE" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTCs" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumOrangeHRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="E2EFramework.testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
-      <option name="MAIN_CLASS_NAME" value="E2EFramework.testcases.EmployeeTCs" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTCs.createEmployee" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumOrangeHRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="E2EFramework.testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
-      <option name="MAIN_CLASS_NAME" value="E2EFramework.testcases.EmployeeTCs" />
-      <option name="METHOD_NAME" value="createEmployee" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,18 +125,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTCs.searchEmployee_positive" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Steps" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumOrangeHRM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="E2EFramework.testcases.*" />
+          <option name="PATTERN" value="E2EFramework.stepDefinitions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
-      <option name="MAIN_CLASS_NAME" value="E2EFramework.testcases.EmployeeTCs" />
-      <option name="METHOD_NAME" value="searchEmployee_positive" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="E2EFramework.stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.stepDefinitions.Steps" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGTestRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.TestRunner.TestNGTestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -194,18 +178,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Testing login functionality using valid Credential" />
+        <item itemvalue="TestNG.TestNGTestRunner (1)" />
+        <item itemvalue="TestNG.Steps" />
         <item itemvalue="TestNG.TestNGTestRunner" />
         <item itemvalue="TestNG.EmployeeTCs.loginValid" />
-        <item itemvalue="TestNG.EmployeeTCs" />
-        <item itemvalue="TestNG.EmployeeTCs.createEmployee" />
-        <item itemvalue="TestNG.EmployeeTCs.searchEmployee_positive" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="" />
+      <changelist id="0910790b-7be1-41f8-9551-4fa64555ba9f" name="Changes" comment="" />
       <created>1733492091458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

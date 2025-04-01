@@ -51,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Scenario: Testing login functionality using valid Credential.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.Steps.executor": "Run",
-    "TestNG.TestNGTestRunner (1).executor": "Run",
-    "TestNG.TestNGTestRunner.executor": "Run",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Scenario: Testing login functionality using valid Credential.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.Steps.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNGTestRunner (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNGTestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SeleniumOrangeHRM\src\test\java" />
@@ -76,7 +76,7 @@
       <recent name="D:\SeleniumOrangeHRM\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Testing login functionality using valid Credential">
+  <component name="RunManager" selected="TestNG.TestNGTestRunner (1)">
     <configuration name="Scenario: Testing login functionality using valid Credential" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Login.feature" />
@@ -178,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Testing login functionality using valid Credential" />
         <item itemvalue="TestNG.TestNGTestRunner (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Testing login functionality using valid Credential" />
         <item itemvalue="TestNG.Steps" />
         <item itemvalue="TestNG.TestNGTestRunner" />
         <item itemvalue="TestNG.EmployeeTCs.loginValid" />

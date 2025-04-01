@@ -27,7 +27,7 @@ public static WebDriver driver;
         driver.findElement(By.name("middleName")).sendKeys(middlename);
         driver.findElement(By.name("lastName")).sendKeys(lastname);
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-         }
+    }
 
 
     public String verifysucessmsg()

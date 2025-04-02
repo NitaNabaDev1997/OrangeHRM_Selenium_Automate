@@ -107,13 +107,14 @@ public class Steps extends BaseTests {
     }
 
     @And("clicks on Search button")
-    public void clicksOnSearchButton() {
+    public void clicksOnSearchButton() throws InterruptedException {
      searchEmployee.clicksearchbutton();
+     Thread.sleep(2000);
     }
 
 
     @Then("^it displays results for employee (.+)$")
-    public void itDisplaysResultsForEmployeeEmployeeName(String username) throws InterruptedException {
-     searchEmployee.selectcheckbox(username);
+    public void itDisplaysResultsForEmployeeEmployeeName(String user) throws InterruptedException {
+     searchEmployee.selectcheckbox(user);
     }
 }

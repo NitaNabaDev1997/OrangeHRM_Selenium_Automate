@@ -5,8 +5,8 @@ import io.cucumber.java.After;
 
 public class Hooks extends BaseTests {
 
-    @After
+   /* @After
     public void tearDown() {
        driver.close();
-    }
+    }*/
 }

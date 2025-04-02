@@ -23,6 +23,12 @@ public class BasePage {
         WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(findBy));
     }
+
+    public void waitforElementtobeVisible(WebElement element)
+    {
+        WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(element)));
+    }
     public void selectDropdown(String option)
     {
         //WebElement dropdownelement = null;

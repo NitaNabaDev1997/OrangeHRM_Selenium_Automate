@@ -81,7 +81,7 @@ public class SearchEmployee extends BasePage {
         }*/
         //driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-        waitforElementtobeVisible(driver.findElement(By.xpath("//div[@class='orangehrm-container']")));
+        waitforElementtobeVisible(By.xpath("//div[@class='orangehrm-container']"));
 
         WebElement table=driver.findElement(By.xpath("//div[@class='oxd-table-card']"));
         List<WebElement> rows=table.findElements(By.xpath("//div[@role='row']"));

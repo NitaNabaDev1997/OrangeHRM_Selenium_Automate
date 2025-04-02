@@ -24,10 +24,10 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(findBy));
     }
 
-    public void waitforElementtobeVisible(WebElement element)
+    public void waitforElementtobeVisible(By findBy)
     {
         WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(element)));
+        wait.until(ExpectedConditions.presenceOfElementLocated(findBy));
     }
     public void selectDropdown(String option)
     {

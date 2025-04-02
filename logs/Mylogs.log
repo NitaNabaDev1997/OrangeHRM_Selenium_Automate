@@ -1,7 +1,5 @@
-[INFO ] 2025-04-01 21:14:01.069 [main] BaseTests - Driver initialized
-[INFO ] 2025-04-01 21:14:04.203 [main] BaseTests - browser lauched
-[INFO ] 2025-04-01 21:14:04.203 [main] BaseTests - User launches edge browser
-[INFO ] 2025-04-01 21:14:04.214 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-04-01 21:14:06.087 [main] BaseTests - login button clicked
-[INFO ] 2025-04-01 21:14:09.298 [main] BaseTests - button is clicked
-[INFO ] 2025-04-01 21:14:10.560 [main] BaseTests - Successfully Saved
+[INFO ] 2025-04-02 15:15:16.663 [main] BaseTests - Driver initialized
+[INFO ] 2025-04-02 15:15:22.298 [main] BaseTests - browser lauched
+[INFO ] 2025-04-02 15:15:22.298 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-02 15:15:22.309 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-02 15:15:24.771 [main] BaseTests - login button clicked

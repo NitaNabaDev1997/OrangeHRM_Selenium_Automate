@@ -20,17 +20,17 @@ Background:
     |   UserTest1      |  UserTest2     |  UserTest3      |
 
 
-#  @SearchEmp
-#  Scenario Outline: Search for a given employee
-#    When User hover over PIM menu
-#    And Clicks on Employee List menu item
-#    When User searchs for this employee <Employee name>
-#    And clicks on Search button
-#    Then it displays results
-#
-#    Examples:
-#      | Employee name |
-#      | "UserTest1"       |
+  @SearchEmp
+  Scenario Outline: Search for a given employee
+   When User click on PIM item
+    And Clicks on Employee List menu item
+    When User searchs for this employee <Employee name>
+    And clicks on Search button
+    Then it displays results for employee <Employee name>
+
+   Examples:
+     | Employee name |
+      | UserTest1  |
 #
 #  @DeleteEmp
 #  Scenario Outline: Search for a given employee

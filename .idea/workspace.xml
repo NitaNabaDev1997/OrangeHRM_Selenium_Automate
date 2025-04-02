@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="" />
+    <list default="true" id="2482c48c-6c5f-4652-be33-96a025f79a5e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework.testcases/EmployeeTCs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework.testcases/EmployeeTCs.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,33 +44,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.SeleniumOrangeHRM [clean].executor": "Run",
-    "Maven.SeleniumOrangeHRM [install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AddEmployee.createEmployee.executor": "Run",
-    "TestNG.AddEmployee.createemployeedetail.executor": "Run",
-    "TestNG.AddEmployee.executor": "Run",
-    "TestNG.AddEmployee.searchEmployee.executor": "Run",
-    "TestNG.AddEmployee.searchEmployee_positive.executor": "Run",
-    "TestNG.EmployeeTCs.createEmployee.executor": "Run",
-    "TestNG.EmployeeTCs.executor": "Run",
-    "TestNG.EmployeeTCs.loginValid.executor": "Run",
-    "TestNG.EmployeeTCs.searchEmployee_positive.executor": "Run",
-    "TestNG.TestNGTestRunner.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OrangeHRM_Selenium_Automate",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SeleniumOrangeHRM [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SeleniumOrangeHRM [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AddEmployee.createEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddEmployee.createemployeedetail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddEmployee.searchEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddEmployee.searchEmployee_positive.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EmployeeTCs.createEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EmployeeTCs.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EmployeeTCs.loginValid.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EmployeeTCs.searchEmployee_positive.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNGTestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OrangeHRM_Selenium_Automate&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SeleniumOrangeHRM\src\test\java" />
@@ -81,7 +84,7 @@
       <recent name="D:\SeleniumOrangeHRM\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGTestRunner (1)">
+  <component name="RunManager" selected="TestNG.EmployeeTCs">
     <configuration name="Scenario: Testing login functionality using valid Credential" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Login.feature" />
@@ -183,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EmployeeTCs" />
         <item itemvalue="TestNG.TestNGTestRunner (1)" />
         <item itemvalue="Cucumber Java.Scenario: Testing login functionality using valid Credential" />
         <item itemvalue="TestNG.TestNGTestRunner" />
         <item itemvalue="TestNG.EmployeeTCs.loginValid" />
-        <item itemvalue="TestNG.EmployeeTCs" />
       </list>
     </recent_temporary>
   </component>

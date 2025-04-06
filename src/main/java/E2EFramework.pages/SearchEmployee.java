@@ -14,13 +14,24 @@ public class SearchEmployee extends BasePage {
       this.driver=driver;
     }
 
-    public void searchemployee()
+    public void clickemployeehistory()
     {
-    driver.findElement(By.linkText("Employee List")).click();
-    driver.findElement(By.xpath("(//input[@placeholder='Type for hints...'])[1]")).sendKeys("TestName1");
-    driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]")).sendKeys("0450");
+        driver.findElement(By.linkText("Employee List")).click();
+    }
+
+    public void searchemployee(String username)
+    {
+    driver.findElement(By.xpath("(//input[@placeholder='Type for hints...'])[1]")).sendKeys(username);
+    //driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]")).sendKeys("0399");
     //selectionEmployeestatus("Freelance");
-    driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+    }
+
+    public void clicksearchbutton()
+    {
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+
     }
 
 
@@ -56,12 +67,30 @@ public class SearchEmployee extends BasePage {
       return toastmsg;
    }
 
-    public void selectcheckbox()
-    {
-        WebElement table=driver.findElement(By.xpath("//div[@class='oxd-table-body']"));
-        List<WebElement> rows=table.findElements(By.xpath("//div[@role='row']"));
+    public void selectcheckbox(String username) throws InterruptedException {
+    /*    //WebElement table=driver.findElement(By.xpath("//div[@class='oxd-table-body']"));
+        List<WebElement> rows=driver.findElements(By.xpath("//div[@class='oxd-table-body']//div[@role='row']/div/div"));
         for(WebElement element:rows){
-            if(element.getText().contains("TestName1"))
+            if(element.getText().contains(username))
+            {
+                //Thread.sleep(2000);
+                driver.findElement(By.xpath("//div[@role='oxd-table-card-cell-checkbox']")).click();
+                System.out.println(driver.findElement(By.xpath("//div[@role='oxd-table-card-cell-checkbox']")).isSelected());
+                //String element.getText()
+            }
+        }*/
+        //driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+        waitforElementtobeVisible(By.xpath("//div[@class='orangehrm-container']"));
+
+        WebElement table=driver.findElement(By.xpath("//div[@class='oxd-table-card']"));
+        List<WebElement> rows=table.findElements(By.xpath("//div[@role='row']"));
+       /* for(WebElement element:rows)
+        {
+            System.out.println(element.getText());
+        }*/
+       for(WebElement element:rows){
+            if(element.getText().contains(username))
             {
                 driver.findElement(By.xpath("//div[@class='oxd-table-card-cell-checkbox']")).click();
             }

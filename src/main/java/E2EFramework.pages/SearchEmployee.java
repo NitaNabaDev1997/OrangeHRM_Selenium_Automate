@@ -68,34 +68,23 @@ public class SearchEmployee extends BasePage {
    }
 
     public void selectcheckbox(String username) throws InterruptedException {
-    /*    //WebElement table=driver.findElement(By.xpath("//div[@class='oxd-table-body']"));
-        List<WebElement> rows=driver.findElements(By.xpath("//div[@class='oxd-table-body']//div[@role='row']/div/div"));
-        for(WebElement element:rows){
-            if(element.getText().contains(username))
-            {
-                //Thread.sleep(2000);
-                driver.findElement(By.xpath("//div[@role='oxd-table-card-cell-checkbox']")).click();
-                System.out.println(driver.findElement(By.xpath("//div[@role='oxd-table-card-cell-checkbox']")).isSelected());
-                //String element.getText()
-            }
-        }*/
-        //driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-        waitforElementtobeVisible(By.xpath("//div[@class='orangehrm-container']"));
-
-        WebElement table=driver.findElement(By.xpath("//div[@class='oxd-table-card']"));
-        List<WebElement> rows=table.findElements(By.xpath("//div[@role='row']"));
-       /* for(WebElement element:rows)
-        {
-            System.out.println(element.getText());
-        }*/
-       for(WebElement element:rows){
-            if(element.getText().contains(username))
-            {
-                driver.findElement(By.xpath("//div[@class='oxd-table-card-cell-checkbox']")).click();
-            }
+       String messge=verifymsg();
+       if(messge.equals("No Records Found"))
+       {
+           System.out.println("User not found");
+       }
+       else {
+           WebElement table = driver.findElement(By.xpath("//div[@class='oxd-table-card']"));
+           List<WebElement> rows = table.findElements(By.xpath("//div[@role='row']"));
+           for (WebElement element : rows) {
+               if (element.getText().contains(username)) {
+                   driver.findElement(By.xpath("//div[@class='oxd-table-card-cell-checkbox']")).click();
+               }
+           }
+       }
         }
-    }
+
     
     public String DeleteEmployee()
     {

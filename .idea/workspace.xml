@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0910790b-7be1-41f8-9551-4fa64555ba9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/extent.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Mylogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Mylogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework/resources/Config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
     }
     }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
     &quot;associatedIndex&quot;: 7
@@ -51,17 +55,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-    &quot;keyToString&quot;: {
+  &quot;keyToString&quot;: {
     &quot;Cucumber Java.Scenario: Testing login functionality using valid Credential.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;TestNG.Steps.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNGTestRunner (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNGTestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
-    }
-    }</component>
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SeleniumCodingPractice&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SeleniumOrangeHRM\src\test\java" />
@@ -124,23 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Steps" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumOrangeHRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="E2EFramework.stepDefinitions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="E2EFramework.stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="E2EFramework.stepDefinitions.Steps" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestNGTestRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumOrangeHRM" />
       <extension name="coverage">
@@ -175,11 +163,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="steps" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.stepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.stepDefinitions.steps" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestNGTestRunner (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Testing login functionality using valid Credential" />
-        <item itemvalue="TestNG.Steps" />
+        <item itemvalue="TestNG.steps" />
         <item itemvalue="TestNG.TestNGTestRunner" />
         <item itemvalue="TestNG.EmployeeTCs.loginValid" />
       </list>

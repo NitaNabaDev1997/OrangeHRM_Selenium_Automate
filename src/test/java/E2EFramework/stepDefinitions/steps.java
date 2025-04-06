@@ -12,9 +12,8 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 import java.io.IOException;
-import java.time.Duration;
 
-public class Steps extends BaseTests {
+public class steps extends BaseTests {
     LoginLogoutPage loginLogoutPage;
     AddEmployeePage addEmployeePage;
     SearchEmployee searchEmployee;

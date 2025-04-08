@@ -73,6 +73,26 @@ public class SearchEmployee extends BasePage {
       String toastmsg=toast.getText();
       return toastmsg;
    }
+   public boolean displayresult(String username)
+   {
+       if(records.getText().contains("No Records Found"))
+       {
+           System.out.println(verifymsg());
+           return false;
+       }
+       else if(records.getText().contains("Records Found")){
+           WebElement table = driver.findElement(By.xpath("//div[@class='oxd-table-card']"));
+           List<WebElement> rows = table.findElements(By.xpath("//div[@role='row']"));
+           for (int i=0;i<rows.size();i++) {
+               if (rows.get(i).getText().contains(username)) {
+                   System.out.println(records.getText());
+                   break;
+               }
+           }
+
+       }
+       return true;
+   }
 
     public void selectcheckbox(String username) throws InterruptedException {
 

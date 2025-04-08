@@ -114,6 +114,6 @@ public class steps extends BaseTests {
 
     @Then("^it displays results for employee (.+)$")
     public void itDisplaysResultsForEmployeeEmployeeName(String user) throws InterruptedException {
-     searchEmployee.selectcheckbox(user);
+        System.out.println(searchEmployee.displayresult(user));
     }
 }

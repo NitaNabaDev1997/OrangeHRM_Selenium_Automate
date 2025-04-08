@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0910790b-7be1-41f8-9551-4fa64555ba9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Employee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Employee.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Mylogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Mylogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

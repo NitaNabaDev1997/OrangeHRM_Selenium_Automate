@@ -30,7 +30,7 @@ Background:
 
    Examples:
      | Employee name |
-      | UserTest1  |
+      | aniket  |
 #
 #  @DeleteEmp
 #  Scenario Outline: Search for a given employee

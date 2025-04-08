@@ -3,6 +3,8 @@ package E2EFramework.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
@@ -12,8 +14,14 @@ public class SearchEmployee extends BasePage {
     {
       super(driver);
       this.driver=driver;
+        PageFactory.initElements(driver,this);
     }
 
+    @FindBy(css="p.oxd-text--toast-message.oxd-toast-content-text")
+    WebElement toast;
+
+    @FindBy(xpath="//div[contains(@class,'orangehrm-vertical-padding')]/span")
+    WebElement records;
     public void clickemployeehistory()
     {
         driver.findElement(By.linkText("Employee List")).click();
@@ -62,26 +70,26 @@ public class SearchEmployee extends BasePage {
 
    public String verifymsg()
    {
-      WebElement toast= driver.findElement(By.cssSelector("p.oxd-text--toast-message.oxd-toast-content-text"));
       String toastmsg=toast.getText();
       return toastmsg;
    }
 
     public void selectcheckbox(String username) throws InterruptedException {
 
-       String messge=verifymsg();
-       if(messge.equals("No Records Found"))
+       if(records.getText().contains("No Records Found"))
        {
-           System.out.println("User not found");
+           System.out.println(verifymsg());
        }
-       else {
+       else if(records.getText().contains("Records Found")){
            WebElement table = driver.findElement(By.xpath("//div[@class='oxd-table-card']"));
            List<WebElement> rows = table.findElements(By.xpath("//div[@role='row']"));
-           for (WebElement element : rows) {
-               if (element.getText().contains(username)) {
-                   driver.findElement(By.xpath("//div[@class='oxd-table-card-cell-checkbox']")).click();
+           //List<WebElement> checkboxes=driver.findElements(By.xpath("//div[@class='oxd-table-card-cell-checkbox']"));
+           for (int i=0;i<rows.size();i++) {
+               if (rows.get(i).getText().contains(username)) {
+                   table.findElement(By.xpath("(//div[@class='oxd-table-card-cell-checkbox'])["+i+"]")).click();
                }
            }
+
        }
         }
 

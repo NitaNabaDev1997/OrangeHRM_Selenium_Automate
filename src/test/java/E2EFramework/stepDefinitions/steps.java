@@ -5,18 +5,23 @@ import E2EFramework.pages.AddEmployeePage;
 import E2EFramework.pages.LoginLogoutPage;
 import E2EFramework.pages.PIMPage;
 import E2EFramework.pages.SearchEmployee;
+import E2EFramework.utils.Utils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.hu.Ha;
 import org.testng.Assert;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 public class steps extends BaseTests {
     LoginLogoutPage loginLogoutPage;
     AddEmployeePage addEmployeePage;
     SearchEmployee searchEmployee;
+    List<HashMap<String,String>> datamap;
  @Given("User Launch Edge Browser")
     public void user_launch_browser() throws IOException {
     loginLogoutPage = launchbrowser();
@@ -90,7 +95,8 @@ public class steps extends BaseTests {
 
     @Then("User is added successfully")
     public void userIsAddedSuccessfully() {
-        logger.info(addEmployeePage.verifysucessmsg());
+        //logger.info(addEmployeePage.verifysucessmsg());
+        logger.info("User is added");
     }
 
 
@@ -115,5 +121,55 @@ public class steps extends BaseTests {
     @Then("^it displays results for employee (.+)$")
     public void itDisplaysResultsForEmployeeEmployeeName(String user) throws InterruptedException {
         System.out.println(searchEmployee.displayresult(user));
+    }
+
+
+    @Then("User fills the details of new Employee from excel with row {string}")
+    public void userFillsTheDetailsOfNewEmployeeFromExcelWithRowRowIndex(String row) {
+
+     datamap= Utils.dataReader(System.getProperty("user.dir")+"\\testData\\EmployeeData.xlsx","Sheet1");
+
+     int index=Integer.parseInt(row)-1;
+        //System.out.println(index);
+
+     String fname=datamap.get(index).get("firstname");
+     String midname=datamap.get(index).get("middlename");
+     String lastname=datamap.get(index).get("lastname");
+     String expresult=datamap.get(index).get("expected");
+
+     addEmployeePage.addemployeewithoutlogindetail(fname,midname,lastname);
+
+     try{
+
+         String msg=addEmployeePage.verifysucessmsg();
+         if(expresult.equals("Valid"))
+         {
+            if(msg.contains("Saved"))
+            {
+
+            Assert.assertTrue(true);
+            }
+            else
+                Assert.fail();
+         }
+
+         else
+         {
+             if(expresult.equals("Invalid"))
+             {
+                 if(msg.contains("Saved"))
+                 {
+                     Assert.fail();
+                 }
+                 else
+                     Assert.assertTrue(true);
+             }
+         }
+
+     }catch (Exception e)
+     {
+         Assert.fail();
+     }
+
     }
 }

@@ -21,12 +21,11 @@ public class Hooks extends BaseTests {
 
     @AfterStep
     public void AddScreenshot(Scenario scenario) throws IOException {
-        //WebDriver driver=testContextSetup.testBase.WebDriverManager();
         if(scenario.isFailed()) {
             System.out.println("am here");
-            File sourcepath=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            byte[] fileContent= FileUtils.readFileToByteArray(sourcepath);
-            scenario.attach(fileContent,"image/png","image");
+            TakesScreenshot ts=(TakesScreenshot) driver;
+            byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png",scenario.getName());
 
         }
     }

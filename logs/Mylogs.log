@@ -1,5 +1,16 @@
-[INFO ] 2025-04-08 21:06:45.555 [main] BaseTests - Driver initialized
-[INFO ] 2025-04-08 21:06:46.385 [main] BaseTests - browser lauched
-[INFO ] 2025-04-08 21:06:46.386 [main] BaseTests - User launches edge browser
-[INFO ] 2025-04-08 21:06:48.659 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-04-08 21:06:49.377 [main] BaseTests - login button clicked
+[INFO ] 2025-04-10 19:05:12.034 [main] BaseTests - Driver initialized
+[INFO ] 2025-04-10 19:05:15.902 [main] BaseTests - browser lauched
+[INFO ] 2025-04-10 19:05:15.902 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-10 19:05:15.930 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-10 19:05:16.950 [main] BaseTests - login button clicked
+[DEBUG] 2025-04-10 19:05:21.620 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-04-10 19:05:21.637 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-04-10 19:05:24.355 [main] BaseTests - button is clicked
+[INFO ] 2025-04-10 19:05:24.357 [main] BaseTests - User is added
+[INFO ] 2025-04-10 19:05:25.829 [main] BaseTests - Driver initialized
+[INFO ] 2025-04-10 19:05:26.742 [main] BaseTests - browser lauched
+[INFO ] 2025-04-10 19:05:26.742 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-10 19:05:29.252 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-10 19:05:29.951 [main] BaseTests - login button clicked
+[DEBUG] 2025-04-10 19:05:34.499 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-04-10 19:05:34.501 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels

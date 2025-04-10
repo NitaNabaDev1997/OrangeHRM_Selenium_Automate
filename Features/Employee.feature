@@ -11,14 +11,14 @@ Background:
   Scenario Outline: Add New Employee in PIM Page
     When User click on PIM item
     And User click on AddEmployee tab
-    Then User fills the details of new Employee <firstname> and <midname> and <lastname>
+    Then User fills the details of new Employee from excel with row "<rowIndex>"
     And User clicks on save button
     Then User is added successfully
 
     Examples:
-    |firstname         | midname        |lastname         |
-    |   UserTest1      |  UserTest2     |  UserTest3      |
-
+    | rowIndex |
+    |        1 |
+    |        2 |
 
   @SearchEmp
   Scenario Outline: Search for a given employee

@@ -1,6 +1,6 @@
 Feature: Login in OrangeHRM Application
 
-
+@LoginEmployee @SearchEmp
   Scenario: Testing login functionality using valid Credential
     Given User Launch Edge Browser
     When User open URL

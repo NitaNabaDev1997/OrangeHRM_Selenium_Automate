@@ -27,7 +27,7 @@ public static WebDriver driver;
         Properties prop = new Properties();
         FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\E2EFramework\\resources\\Config.properties");
         prop.load(fileInputStream);
-        String browsername = prop.getProperty("browser");
+        String browsername = System.getProperty("browser")!=null? System.getProperty("browser"):prop.getProperty("browser");
         if (browsername.equalsIgnoreCase("Edge")) {
            // WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
@@ -42,7 +42,7 @@ public static WebDriver driver;
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
         return driver;
     }
@@ -78,7 +78,8 @@ public static List<HashMap<String,String>> dataReader(String filePath, String sh
         }
 
         fs.close();
-    } catch (Exception e) {
+    }
+    catch (Exception e) {
 
         e.getMessage();
     }

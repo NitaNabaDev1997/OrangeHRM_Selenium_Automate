@@ -2,12 +2,12 @@
 Feature: Employee create,add,delete
 
 Background:
-  Given User Launch Edge Browser
-  When User open URL
-  And User Enters Username as "Admin" and Password as "admin123"
-  And Click on Login
+  Given User Launch Browser
+  When URL is hit
+  And User Enters Username  "Admin" and Password  "admin123"
+  And Click on Login button
 
-  @AddEmployee
+  @AddEmployee @LoginEmployee
   Scenario Outline: Add New Employee in PIM Page
     When User click on PIM item
     And User click on AddEmployee tab
@@ -20,7 +20,7 @@ Background:
     |        1 |
     |        2 |
 
-  @SearchEmp
+  @SearchEmp @LoginEmployee
   Scenario Outline: Search for a given employee
    When User click on PIM item
     And Clicks on Employee List menu item

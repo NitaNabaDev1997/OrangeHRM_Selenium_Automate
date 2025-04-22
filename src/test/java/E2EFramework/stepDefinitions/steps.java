@@ -22,54 +22,29 @@ public class steps extends BaseTests {
     AddEmployeePage addEmployeePage;
     SearchEmployee searchEmployee;
     List<HashMap<String,String>> datamap;
- @Given("User Launch Edge Browser")
-    public void user_launch_browser() throws IOException {
-    loginLogoutPage = launchbrowser();
+ @Given("User Launch Browser")
+    public void launch_browser() throws IOException {
+   loginLogoutPage = launchbrowser();
     logger.info("User launches edge browser");
 }
 
-    @When("User open URL")
+    @When("URL is hit")
     public void userOpenURL() {
     System.out.println("Url is open in successfully"+driver.getCurrentUrl());
     logger.info("Url is open and printed in console");
     }
 
 
-    @And("User Enters Username as {string} and Password as {string}")
+    @And("User Enters Username  {string} and Password  {string}")
     public void userEntersUsernameAsAndPasswordAs(String username, String password) {
         loginLogoutPage.login(username,password);
     }
 
-    @And("Click on Login")
+    @And("Click on Login button")
     public void clickOnLogin() {
     logger.info("login button clicked");
     }
 
-
-    @Then("Page title should be {string}")
-    public void pageTitleShouldBe(String title) {
-    String logintitle=driver.getTitle();
-       // logger.info("Test");
-    Assert.assertEquals(logintitle,title);
-    }
-
-    @When("User click on profile link")
-    public void userClickOnProfileLink() {
-       // logger.info("Test2");
-        loginLogoutPage.clickProfile();
-        //Thread.sleep(2000);
-    }
-
-    @And("click on Logout link")
-    public void clickOnLogoutLink() {
-      //  logger.info("Test3");
-     loginLogoutPage.clicklogout();
-    }
-
-    @Then("close the browser")
-    public void closeTheBrowser() {
-   driver.close();
-    }
 
     @When("User click on PIM item")
     public void userClickOnPIMItem() {

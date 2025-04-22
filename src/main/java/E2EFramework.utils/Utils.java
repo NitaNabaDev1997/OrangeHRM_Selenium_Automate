@@ -1,7 +1,10 @@
 package E2EFramework.utils;
 
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -11,9 +14,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -87,5 +92,20 @@ public static List<HashMap<String,String>> dataReader(String filePath, String sh
 
 return empdata;
 }
+
+
+
+    public List<HashMap<String,String>> getJsonDataToMap(String filepath) throws IOException {
+        //read json to String
+        String jsonContent= FileUtils.readFileToString(new File(filepath), StandardCharsets.UTF_8);
+
+        //String to HashMap databind
+        ObjectMapper objectMapper= new ObjectMapper();
+        List<HashMap<String,String>> data= objectMapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
+        });
+
+        return data;
+    }
+
 
 }

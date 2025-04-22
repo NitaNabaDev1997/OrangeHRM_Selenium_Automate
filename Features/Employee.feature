@@ -20,17 +20,15 @@ Background:
     |        1 |
     |        2 |
 
-  @SearchEmp @LoginEmployee
-  Scenario Outline: Search for a given employee
+  @SearchEmp
+  Scenario: Search for a given employee
    When User click on PIM item
     And Clicks on Employee List menu item
-    When User searchs for this employee <Employee name>
+    When User searchs for this employee
     And clicks on Search button
-    Then it displays results for employee <Employee name>
+    Then it displays results for employee
 
-   Examples:
-     | Employee name |
-      | aniket  |
+
 #
 #  @DeleteEmp
 #  Scenario Outline: Search for a given employee

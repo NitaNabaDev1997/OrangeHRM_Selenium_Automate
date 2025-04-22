@@ -81,9 +81,16 @@ public class steps extends BaseTests {
         searchEmployee.clickemployeehistory();
     }
 
-    @When("^User searchs for this employee (.+)$")
-    public void userSearchsForThisEmployeeEmployeeName(String username) {
-    searchEmployee.searchemployee(username);
+    @When("User searchs for this employee")
+    public void userSearchsForThisEmployeeEmployeeName() throws IOException {
+        List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"/src/main/java/E2EFramework.utils/employee.json");
+        for (HashMap<String, String> record : data) {
+            String username = record.get("employee"); // Assuming the key in JSON is "username"
+
+            // Pass the username to the search method
+            searchEmployee.searchemployee(username);
+        }
+            // Optionally add steps to verify the results for each search
     }
 
     @And("clicks on Search button")
@@ -93,9 +100,16 @@ public class steps extends BaseTests {
     }
 
 
-    @Then("^it displays results for employee (.+)$")
-    public void itDisplaysResultsForEmployeeEmployeeName(String user) throws InterruptedException {
-        System.out.println(searchEmployee.displayresult(user));
+    @Then("it displays results for employee")
+    public void itDisplaysResultsForEmployeeEmployeeName() throws IOException {
+
+        List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"/src/main/java/E2EFramework.utils/employee.json");
+        for (HashMap<String, String> record : data) {
+            String username = record.get("employee"); // Assuming the key in JSON is "username"
+
+            // Pass the username to the search method
+            System.out.println(searchEmployee.displayresult(username));
+        }
     }
 
 

@@ -5,34 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0910790b-7be1-41f8-9551-4fa64555ba9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/loginsteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/employee.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Features/Employee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Employee.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Mylogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Mylogs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 09-17-22/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-34-15/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-34-15/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-34-15/Screenshots/embedded2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-36-01/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-36-01/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-36-01/Screenshots/embedded2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-42-17/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-42-17/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-47-16/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-47-16/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-48-20/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-51-14/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-51-14/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-52-11/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 18-52-11/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 19-05-08/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 10-04-25 19-05-08/Screenshots/embedded1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testData/EmployeeData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testData/EmployeeData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

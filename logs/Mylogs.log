@@ -1,12 +1,12 @@
-[INFO ] 2025-04-22 19:02:55.901 [main] BaseTests - Test started...
-[INFO ] 2025-04-22 19:02:58.066 [main] BaseTests - Driver initialized
-[INFO ] 2025-04-22 19:03:01.901 [main] BaseTests - browser lauched
-[INFO ] 2025-04-22 19:03:01.901 [main] BaseTests - User launches edge browser
-[INFO ] 2025-04-22 19:03:01.922 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-04-22 19:03:04.023 [main] BaseTests - login button clicked
-[INFO ] 2025-04-22 19:03:09.694 [main] BaseTests - Test started...
-[INFO ] 2025-04-22 19:03:11.134 [main] BaseTests - Driver initialized
-[INFO ] 2025-04-22 19:03:12.103 [main] BaseTests - browser lauched
-[INFO ] 2025-04-22 19:03:12.105 [main] BaseTests - User launches edge browser
-[INFO ] 2025-04-22 19:03:15.644 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-04-22 19:03:16.778 [main] BaseTests - login button clicked
+[INFO ] 2025-04-22 21:45:25.857 [main] BaseTests - Test started...
+[INFO ] 2025-04-22 21:45:27.116 [main] BaseTests - Driver initialized
+[INFO ] 2025-04-22 21:45:30.788 [main] BaseTests - browser lauched
+[INFO ] 2025-04-22 21:45:30.788 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-22 21:45:30.798 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-22 21:45:31.615 [main] BaseTests - login button clicked
+[INFO ] 2025-04-22 21:45:38.250 [main] BaseTests - Test started...
+[INFO ] 2025-04-22 21:45:39.121 [main] BaseTests - Driver initialized
+[INFO ] 2025-04-22 21:45:42.610 [main] BaseTests - browser lauched
+[INFO ] 2025-04-22 21:45:42.612 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-22 21:45:42.645 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-22 21:45:43.468 [main] BaseTests - login button clicked

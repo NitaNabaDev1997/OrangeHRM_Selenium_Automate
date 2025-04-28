@@ -28,35 +28,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Utils {
 public static WebDriver driver;
-    public static WebDriver initializedriver() throws IOException {
-        Properties prop = new Properties();
-        FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\E2EFramework\\resources\\Config.properties");
-        prop.load(fileInputStream);
-        String browsername = System.getProperty("browser")!=null? System.getProperty("browser"):prop.getProperty("browser");
-        if (browsername.equalsIgnoreCase("Edge")) {
-           // WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
-        }
-        else if(browsername.equalsIgnoreCase("firefox"))
-        {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-        }
-        else if(browsername.equalsIgnoreCase("chrome"))
-        {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.manage().window().maximize();
-        return driver;
-    }
-
-
 public static List<HashMap<String,String>> dataReader(String filePath, String sheetName)
 {
-
-
     List<HashMap<String,String>> empdata= new ArrayList<>();
     try
     {

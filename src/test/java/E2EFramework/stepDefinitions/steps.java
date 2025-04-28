@@ -10,7 +10,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.hu.Ha;
 import org.testng.Assert;
 
 import java.io.IOException;
@@ -23,9 +22,10 @@ public class steps extends BaseTests {
     SearchEmployee searchEmployee;
     List<HashMap<String,String>> datamap;
  @Given("User Launch Browser")
-    public void launch_browser() throws IOException {
-   loginLogoutPage = launchbrowser();
-    logger.info("User launches edge browser");
+    public void launch_browser() {
+     BaseTests.getLogger().info("Goto my account-->Click on Login.. ");
+     loginLogoutPage=new LoginLogoutPage(BaseTests.getDriver());
+     logger.info("User launches edge browser");
 }
 
     @When("URL is hit")
@@ -81,7 +81,7 @@ public class steps extends BaseTests {
         searchEmployee.clickemployeehistory();
     }
 
-    @When("User searchs for this employee")
+    @When("User searches for this employee")
     public void userSearchsForThisEmployeeEmployeeName() throws IOException {
         List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"/src/main/java/E2EFramework.utils/employee.json");
         for (HashMap<String, String> record : data) {
@@ -160,5 +160,25 @@ public class steps extends BaseTests {
          Assert.fail();
      }
 
+    }
+
+    @When("User clicks on select all")
+    public void userClicksOnSelectAll() {
+        searchEmployee.selectcheckbox();
+    }
+
+    @And("clicks on delete button")
+    public void clicksOnDeleteButton() {
+        searchEmployee.deletebutton();
+    }
+
+    @Then("confirmation pop up will appear")
+    public void confirmationPopUpWillAppear() {
+        System.out.println("Delete msg appear "+ searchEmployee.popup());
+    }
+
+    @And("record will be deleted")
+    public void recordWillBeDeleted() {
+     searchEmployee.DeleteEmployee();
     }
 }

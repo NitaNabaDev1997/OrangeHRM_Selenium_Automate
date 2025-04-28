@@ -9,15 +9,19 @@ import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.SocketException;
+import java.util.Properties;
 
 public class Hooks extends BaseTests {
+    Properties p;
     @Before
     public void setUp() throws IOException {
-        //loginLogoutPage = launchbrowser();
-    logger.info("Test started...");
+        driver=BaseTests.initializedriver();
+        p=BaseTests.getProperties();
+        driver.get(p.getProperty("appURL"));
+        driver.manage().window().maximize();
+
+
     }
    @After
     public void tearDown() {

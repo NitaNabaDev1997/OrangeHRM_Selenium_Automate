@@ -14,7 +14,8 @@ public class loginsteps extends BaseTests {
     LoginLogoutPage loginLogoutPage;
     @Given("User Launch Edge Browser")
     public void user_launch_browser() throws IOException {
-        loginLogoutPage = launchbrowser();
+        BaseTests.getLogger().info("Goto my account-->Click on Login.. ");
+        loginLogoutPage=new LoginLogoutPage(BaseTests.getDriver());
         logger.info("User launches edge browser");
     }
 
@@ -39,24 +40,22 @@ public class loginsteps extends BaseTests {
     @Then("Page title should be {string}")
     public void pageTitleShouldBe(String title) {
         String logintitle=driver.getTitle();
-        // logger.info("Test");
         Assert.assertEquals(logintitle,title);
     }
 
     @When("User click on profile link")
     public void userClickOnProfileLink() {
         loginLogoutPage.clickProfile();
-        //Thread.sleep(2000);
     }
 
     @And("click on Logout link")
     public void clickOnLogoutLink() {
-        //  logger.info("Test3");
         loginLogoutPage.clicklogout();
     }
 
-    @Then("close the browser")
-    public void closeTheBrowser() {
-        driver.close();
+    @Then("User should be on Login Page")
+    public void landloginpage() {
+       String text= loginLogoutPage.gettheText();
+        Assert.assertEquals(text,"Login","Not successfully logged out");
     }
 }

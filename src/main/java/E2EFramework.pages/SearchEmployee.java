@@ -1,6 +1,7 @@
 package E2EFramework.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +23,7 @@ public class SearchEmployee extends BasePage {
 
     @FindBy(xpath="//div[contains(@class,'orangehrm-vertical-padding')]/span")
     WebElement records;
+
     public void clickemployeehistory()
     {
         driver.findElement(By.linkText("Employee List")).click();
@@ -38,15 +40,13 @@ public class SearchEmployee extends BasePage {
     public void clicksearchbutton()
     {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-
-
     }
 
 
     public WebElement deletebutton()
     {
        WebElement deletebutton =driver.findElement(By.xpath("//button[contains(.,'Delete Selected')]"));
-        System.out.println("Delete button displayed"+deletebutton.isEnabled());
+        System.out.println("Delete button displayed "+deletebutton.isEnabled());
        return deletebutton;
     }
 
@@ -94,23 +94,24 @@ public class SearchEmployee extends BasePage {
        return true;
    }
 
-    public void selectcheckbox(String username) throws InterruptedException {
+    public void selectcheckbox()  {
 
        if(records.getText().contains("No Records Found"))
        {
            System.out.println(verifymsg());
        }
-       else if(records.getText().contains("Records Found")){
-           WebElement table = driver.findElement(By.xpath("//div[@class='oxd-table-card']"));
-           List<WebElement> rows = table.findElements(By.xpath("//div[@role='row']"));
-           //List<WebElement> checkboxes=driver.findElements(By.xpath("//div[@class='oxd-table-card-cell-checkbox']"));
-           for (int i=0;i<rows.size();i++) {
-               if (rows.get(i).getText().contains(username)) {
-                   table.findElement(By.xpath("(//div[@class='oxd-table-card-cell-checkbox'])["+i+"]")).click();
-               }
-           }
-
+       else if(records.getText().contains("Records Found") || records.getText().contains("Record Found")){
+           WebElement checkbox= driver.findElement(By.xpath("(//div[@role='columnheader'])[1]"));
+           checkbox.click();
        }
+        }
+
+        public boolean popup()
+        {
+            WebElement deletebutton =driver.findElement(By.xpath("//button[contains(.,'Delete Selected')]"));
+            deletebutton.click();
+           Boolean flag= driver.findElement(By.xpath("//button[contains(.,'Yes, Delete')]")).isDisplayed();
+           return flag;
         }
 
     

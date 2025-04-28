@@ -9,4 +9,4 @@ Feature: Login in OrangeHRM Application
     Then Page title should be "OrangeHRM"
     When User click on profile link
     And click on Logout link
-    Then close the browser
+    Then User should be on Login Page

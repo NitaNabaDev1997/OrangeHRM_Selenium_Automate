@@ -16,23 +16,65 @@ public class BasePage {
     public BasePage(WebDriver driver)
     {
         this.driver=driver;
-    }
-
-    public void waitforElementToClick(By findBy)
-    {
         wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(findBy));
     }
 
-    public void waitforElementtobeVisible(By findBy)
+
+    public void enterText(WebElement element,String txt)
     {
-        wait= new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.presenceOfElementLocated(findBy));
+        try
+        {
+            wait.until(ExpectedConditions.visibilityOf(element));
+            element.clear();
+            element.sendKeys(txt);
+        }catch (Exception e)
+        {
+            throw e;
+        }
     }
-    public void selectDropdown(String option)
+
+    public void enterText(By by,String txt)
     {
-        //WebElement dropdownelement = null;
-        List<WebElement> elementList=driver.findElements(By.cssSelector(".oxd-userdropdown-link"));
+        try
+        {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            WebElement element=driver.findElement(by);
+            element.clear();
+            element.sendKeys(txt);
+        }catch (Exception e)
+        {
+            throw e;
+        }
+    }
+
+    public void click(WebElement element)
+    {
+        try
+        {
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            element.click();
+        }catch (Exception e)
+        {
+            throw e;
+        }
+    }
+
+
+    public void click(By by,String txt)
+    {
+        try
+        {
+            wait.until(ExpectedConditions.elementToBeClickable(by));
+            WebElement element=driver.findElement(by);
+            element.click();
+        }catch (Exception e)
+        {
+            throw e;
+        }
+    }
+
+    public void selectDropdown(List<WebElement> elementList,String option)
+    {
         for(WebElement element:elementList)
         {
             System.out.println(element.getText());
@@ -41,7 +83,7 @@ public class BasePage {
                 break;
             }
         }
-       // return dropdownelement;
+
 
     }
 }

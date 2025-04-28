@@ -7,7 +7,7 @@ Background:
   And User Enters Username  "Admin" and Password  "admin123"
   And Click on Login button
 
-  @AddEmployee @LoginEmployee
+  @AddEmployee @LoginDataDrivenEmployee
   Scenario Outline: Add New Employee in PIM Page
     When User click on PIM item
     And User click on AddEmployee tab
@@ -19,31 +19,27 @@ Background:
     | rowIndex |
     |        1 |
     |        2 |
+    |        3 |
 
   @SearchEmp
   Scenario: Search for a given employee
    When User click on PIM item
     And Clicks on Employee List menu item
-    When User searchs for this employee
+    When User searches for this employee
     And clicks on Search button
     Then it displays results for employee
 
 
-#
-#  @DeleteEmp
-#  Scenario Outline: Search for a given employee
-#    When User hover over PIM menu
-#    And Clicks on Employee List menu item
-#    When User searchs for this employee <Employee name>
-#    And clicks on Search button
-#    Then it displays results
-#    When User clicks on select all
-#    And clicks on delete button
-#    Then confirmation pop up will appear
-#    And record will be deleted
-#
-#
-#    Examples:
-#      | Employee name |
-#      | "UserTest1" |
-#
+
+  @DeleteEmp
+  Scenario: delete employee
+    When User click on PIM item
+    And Clicks on Employee List menu item
+    When User searches for this employee
+    And clicks on Search button
+    Then it displays results for employee
+    When User clicks on select all
+    And clicks on delete button
+    Then confirmation pop up will appear
+    And record will be deleted
+

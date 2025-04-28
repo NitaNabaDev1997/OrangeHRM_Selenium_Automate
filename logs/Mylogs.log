@@ -1,4 +1,24 @@
-[INFO ] 2025-04-28 15:31:06.549 [main] BaseTests - Goto my account-->Click on Login.. 
-[INFO ] 2025-04-28 15:31:06.558 [main] BaseTests - User launches edge browser
-[INFO ] 2025-04-28 15:31:06.575 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-04-28 15:31:06.955 [main] BaseTests - login button clicked
+[INFO ] 2025-04-28 16:23:58.758 [main] BaseTests - Goto my account-->Click on Login.. 
+[INFO ] 2025-04-28 16:23:58.780 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-28 16:23:58.810 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-28 16:23:59.098 [main] BaseTests - login button clicked
+[DEBUG] 2025-04-28 16:24:03.408 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-04-28 16:24:03.414 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-04-28 16:24:06.032 [main] BaseTests - button is clicked
+[INFO ] 2025-04-28 16:24:06.032 [main] BaseTests - User is added
+[INFO ] 2025-04-28 16:24:10.131 [main] BaseTests - Goto my account-->Click on Login.. 
+[INFO ] 2025-04-28 16:24:10.131 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-28 16:24:10.146 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-28 16:24:10.762 [main] BaseTests - login button clicked
+[DEBUG] 2025-04-28 16:24:14.616 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-04-28 16:24:14.616 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-04-28 16:24:16.618 [main] BaseTests - button is clicked
+[INFO ] 2025-04-28 16:24:16.618 [main] BaseTests - User is added
+[INFO ] 2025-04-28 16:24:20.447 [main] BaseTests - Goto my account-->Click on Login.. 
+[INFO ] 2025-04-28 16:24:20.447 [main] BaseTests - User launches edge browser
+[INFO ] 2025-04-28 16:24:20.457 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-04-28 16:24:21.093 [main] BaseTests - login button clicked
+[DEBUG] 2025-04-28 16:24:24.949 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-04-28 16:24:24.950 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-04-28 16:24:27.238 [main] BaseTests - button is clicked
+[INFO ] 2025-04-28 16:24:27.240 [main] BaseTests - User is added

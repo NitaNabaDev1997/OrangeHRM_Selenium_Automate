@@ -81,15 +81,18 @@ public class steps extends BaseTests {
         searchEmployee.clickemployeehistory();
     }
 
-    @When("User searches for this employee")
-    public void userSearchsForThisEmployeeEmployeeName() throws IOException {
+    @When("User searches for this employee from index {string}")
+    public void userSearchsForThisEmployeeEmployeeName(String index) throws IOException {
         List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"/src/main/java/E2EFramework.utils/employee.json");
-        for (HashMap<String, String> record : data) {
+       /* for (HashMap<String, String> record : data) {
             String username = record.get("employee"); // Assuming the key in JSON is "username"
-
+            //System.out.println(username);
             // Pass the username to the search method
             searchEmployee.searchemployee(username);
-        }
+        }*/
+        int index1=Integer.parseInt(index);
+        String username= data.get(index1).get("employee");
+        searchEmployee.searchemployee(username);
             // Optionally add steps to verify the results for each search
     }
 
@@ -100,16 +103,20 @@ public class steps extends BaseTests {
     }
 
 
-    @Then("it displays results for employee")
-    public void itDisplaysResultsForEmployeeEmployeeName() throws IOException {
+    @Then("it displays results for employee from index {string}")
+    public void itDisplaysResultsForEmployeeEmployeeName(String index) throws IOException {
 
         List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"/src/main/java/E2EFramework.utils/employee.json");
-        for (HashMap<String, String> record : data) {
+        /*for (HashMap<String, String> record : data) {
             String username = record.get("employee"); // Assuming the key in JSON is "username"
 
             // Pass the username to the search method
             System.out.println(searchEmployee.displayresult(username));
-        }
+        }*/
+
+        int index1=Integer.parseInt(index);
+        String username= data.get(index1).get("employee");
+        System.out.println(searchEmployee.displayresult(username));
     }
 
 
@@ -181,4 +188,5 @@ public class steps extends BaseTests {
     public void recordWillBeDeleted() {
      searchEmployee.DeleteEmployee();
     }
+
 }

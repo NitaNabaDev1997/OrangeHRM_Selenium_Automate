@@ -37,6 +37,8 @@ public class Hooks extends BaseTests {
     @AfterStep
     public void AddScreenshot(Scenario scenario) throws IOException {
         if(scenario.isFailed()) {
+            logger.error("Test Failed......");
+            logger.debug("debug logs......");
             System.out.println("am here");
             TakesScreenshot ts=(TakesScreenshot) driver;
             byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);

@@ -22,12 +22,17 @@ Background:
     |        3 |
 
   @SearchEmp
-  Scenario: Search for a given employee
-   When User click on PIM item
+  Scenario Outline: Search for a given employee
+    When User click on PIM item
     And Clicks on Employee List menu item
-    When User searches for this employee
+    When User searches for this employee from index "<index>"
     And clicks on Search button
-    Then it displays results for employee
+    Then it displays results for employee from index "<index>"
+
+    Examples:
+      | index |
+      | 0     |
+      | 1     |
 
 
 

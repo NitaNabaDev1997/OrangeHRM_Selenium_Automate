@@ -8,12 +8,14 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
 import java.util.Properties;
 
 public class Hooks extends BaseTests {
     Properties p;
+    private WebDriver driver;
     @Before
     public void setUp() throws IOException {
         driver=BaseTests.initializedriver();
@@ -23,19 +25,22 @@ public class Hooks extends BaseTests {
 
 
     }
-   @After
+   @After(order=0)
     public void tearDown() {
-       if (driver != null) {
+      /* if (driver != null) {
            try {
                driver.close();
+               threadLocal.remove();
            } catch (NoSuchSessionException e) {
                System.out.println("Session already closed: " + e.getMessage());
            }
-       }
+       }*/
+
+       removeDriver();
     }
 
-    @AfterStep
-    public void AddScreenshot(Scenario scenario) throws IOException {
+    @AfterStep(order=1)
+    public void AddScreenShot(Scenario scenario) throws IOException {
         if(scenario.isFailed()) {
             logger.error("Test Failed......");
             logger.debug("debug logs......");

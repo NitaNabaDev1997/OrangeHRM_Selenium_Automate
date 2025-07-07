@@ -21,28 +21,30 @@ import java.time.Duration;
 import java.util.Properties;
 
 
+
 public class BaseTests extends Utils{
     public static Logger logger;
     static Properties prop;
+    public static ThreadLocal<WebDriver> threadLocal= new ThreadLocal<>();
     public static WebDriver initializedriver() throws IOException {
 
         String browsername = System.getProperty("browser")!=null? System.getProperty("browser"):getProperties().getProperty("browser");
         if (browsername.equalsIgnoreCase("Edge")) {
             // WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
+            threadLocal.set(new EdgeDriver());
         }
         else if(browsername.equalsIgnoreCase("firefox"))
         {
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+            threadLocal.set(new FirefoxDriver());
         }
         else if(browsername.equalsIgnoreCase("chrome"))
         {
             //WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            threadLocal.set(new ChromeDriver());
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        return driver;
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        return getDriver();
     }
 
     public static Properties getProperties() throws IOException
@@ -54,11 +56,20 @@ public class BaseTests extends Utils{
         return prop;
     }
 
-    protected static WebDriver getDriver()
+    public static synchronized WebDriver getDriver()
     {
-        return driver;
+        return threadLocal.get();
+
     }
 
+    public static void removeDriver()
+    {
+        if(getDriver()!=null)
+        {
+            getDriver().quit();
+            threadLocal.remove();
+        }
+    }
     public static Logger getLogger()
     {
         logger=LogManager.getLogger(BaseTests.class); //Log4j

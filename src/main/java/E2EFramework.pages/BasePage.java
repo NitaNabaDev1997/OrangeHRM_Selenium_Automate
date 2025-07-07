@@ -73,17 +73,67 @@ public class BasePage {
         }
     }
 
-    public void selectDropdown(List<WebElement> elementList,String option)
-    {
-        for(WebElement element:elementList)
-        {
+    public void selectDropdown(List<WebElement> elementList,String option) {
+        for (WebElement element : elementList) {
             System.out.println(element.getText());
-            if(element.getText().equalsIgnoreCase(option)) {
+            if (element.getText().equalsIgnoreCase(option)) {
                 element.click();
                 break;
             }
         }
+    }
 
+
+    public void selectPastDate(WebElement CurrentYear,String expectedYear, String expectedMonth,WebElement CurrentMonth,List<WebElement> dates,String expectedDay, WebElement leftArrow)
+    {
+       while(true) {
+
+           String currentYear=CurrentYear.getText();
+           String currentMonth=CurrentMonth.getText();
+
+           if (currentYear.equalsIgnoreCase(expectedYear) && currentMonth.equalsIgnoreCase(expectedMonth)) {
+               break;
+           }
+           leftArrow.click();
+
+       }
+
+       String expectedDayCalendar=String.valueOf(Integer.parseInt(expectedDay));
+        System.out.println(expectedDayCalendar);
+       for(WebElement e:dates)
+       {
+           System.out.println(e.getText());
+           if(e.getText().equalsIgnoreCase(expectedDayCalendar)) {
+               e.click();
+               break;
+           }
+       }
 
     }
+
+    public void selectFutureDate(WebElement CurrentYear,String expectedYear, String expectedMonth,WebElement CurrentMonth,List<WebElement> dates,String expectedDay, WebElement rightArrow)
+    {
+
+
+        while(true) {
+            String currentYear=CurrentYear.getText();
+            String currentMonth=CurrentMonth.getText();
+
+            if (currentYear.equalsIgnoreCase(expectedYear) && currentMonth.equalsIgnoreCase(expectedMonth)) {
+                break;
+            }
+            rightArrow.click();
+        }
+
+        String expectedDayCalendar=String.valueOf(Integer.parseInt(expectedDay));
+        for(WebElement e:dates)
+        {
+            System.out.println(e.getText());
+            if(e.getText().equalsIgnoreCase(expectedDayCalendar)) {
+                e.click();
+                break;
+            }
+        }
+    }
+
 }

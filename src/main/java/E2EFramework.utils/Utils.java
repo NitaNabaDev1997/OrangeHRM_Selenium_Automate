@@ -20,6 +20,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,7 +28,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Utils {
-public static WebDriver driver;
+
 public static List<HashMap<String,String>> dataReader(String filePath, String sheetName)
 {
     List<HashMap<String,String>> empdata= new ArrayList<>();
@@ -75,10 +76,35 @@ return empdata;
         //String to HashMap databind
         ObjectMapper objectMapper= new ObjectMapper();
         List<HashMap<String,String>> data= objectMapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
-        });
+        }); // Deserialization --- json to list of Hashmap
 
         return data;
     }
 
 
+    public List<String> getYearDateMonthvalue(String expecteddate)
+    {
+        String parts[]=expecteddate.split("-");
+
+        String correctedDate = parts[0] + "-" + parts[2] + "-" + parts[1];
+
+        LocalDate date = LocalDate.parse(correctedDate);
+
+        System.out.println("Year: " + date.getYear());
+        System.out.println("Month Number: " + date.getMonthValue());
+        System.out.println("Month Name: " + date.getMonth());
+        System.out.println("Day: " + date.getDayOfMonth());
+
+     /*  String year=parts[0];
+        String day=parts[1];
+        String month=parts[2];*/
+
+        List<String> dateList= new ArrayList<>();
+        dateList.add(String.valueOf(date.getYear()));
+        dateList.add(String.valueOf(date.getDayOfMonth()));
+        dateList.add(String.valueOf(date.getMonth()));
+
+        return  dateList;
+
+    }
 }

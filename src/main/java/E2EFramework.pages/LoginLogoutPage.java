@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class LoginLogoutPage extends BasePage{
-public static WebDriver driver;
+public WebDriver driver;
     public LoginLogoutPage(WebDriver driver) {
        super(driver);
-       this.driver=driver;
+       this.driver =driver;
         PageFactory.initElements(driver,this);
     }
 
@@ -52,5 +52,15 @@ public static WebDriver driver;
     public String gettheText()
     {
         return loginsymbol.getText();
+    }
+
+    public String getUrl()
+    {
+        return driver.getCurrentUrl();
+    }
+
+    public String getTitle()
+    {
+        return driver.getTitle();
     }
 }

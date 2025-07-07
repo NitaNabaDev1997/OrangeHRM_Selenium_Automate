@@ -5,39 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0910790b-7be1-41f8-9551-4fa64555ba9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Features/LeaveManagement.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/ApplyLeavePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LeaveListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/ParallelTestNGTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Features/Employee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Employee.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Mylogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Mylogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/employee.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/employee.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/AddEmployeePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LoginLogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LoginLogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/PIMPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/PIMPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/extent.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/baseTest/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/baseTest/BaseTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/loginsteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/loginsteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 14-22-53/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 14-26-23/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 14-27-27/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 14-27-27/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 15-27-57/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 15-29-42/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 15-29-42/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 15-31-01/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-11-32/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-11-32/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-11-32/Screenshots/embedded2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-11-32/Screenshots/embedded3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-14-33/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-14-33/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-14-33/Screenshots/embedded2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-14-33/Screenshots/embedded3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-16-04/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-18-50/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-18-50/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-18-50/Screenshots/embedded2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-18-50/Screenshots/embedded3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-21-14/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-21-14/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 28-04-25 16-23-53/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-28-07/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-36-10/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-50-12/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-50-12/Screenshots/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-51-40/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-51-40/Screenshots/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-57-01/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-57-01/Screenshots/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 17-37-33/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 17-51-05/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 17-51-42/Report/CucumberExtentReport.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testData/EmployeeData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testData/EmployeeData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +83,12 @@
     &quot;Cucumber Java.Scenario: delete employee.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.ParallelTestNGTestRunner (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParallelTestNGTestRunner (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParallelTestNGTestRunner (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParallelTestNGTestRunner (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParallelTestNGTestRunner (5).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParallelTestNGTestRunner.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Steps.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNGTestRunner (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNGTestRunner.executor&quot;: &quot;Run&quot;,
@@ -105,29 +109,11 @@
       <recent name="D:\SeleniumOrangeHRM" />
       <recent name="D:\SeleniumOrangeHRM\src\main\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="E2EFramework.TestRunner" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGTestRunner (1)">
-    <configuration name="Scenario: delete employee" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Employee.feature" />
-      <option name="GLUE" value="src/test/java/E2EFramework/stepDefinitions/Steps.java" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="SeleniumOrangeHRM" />
-      <option name="NAME_FILTER" value="^delete employee$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^delete employee$&quot;" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: delete employee" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestNGTestRunner">
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="D:\OrangeHRM_Selenium_Automate" />
       <option name="GLUE" value="src/test/java/E2EFramework/stepDefinitions/Steps.java" />
@@ -137,25 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTCs.loginValid" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumOrangeHRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="E2EFramework.testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="E2EFramework.baseTest" />
-      <option name="MAIN_CLASS_NAME" value="E2EFramework.testcases.EmployeeTCs" />
-      <option name="METHOD_NAME" value="loginValid" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNGTestRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParallelTestNGTestRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumOrangeHRM" />
       <extension name="coverage">
         <pattern>
@@ -164,7 +132,58 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="E2EFramework.TestRunner" />
-      <option name="MAIN_CLASS_NAME" value="E2EFramework.TestRunner.TestNGTestRunner" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.TestRunner.ParallelTestNGTestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelTestNGTestRunner (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.TestRunner.ParallelTestNGTestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelTestNGTestRunner (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.TestRunner.ParallelTestNGTestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelTestNGTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumOrangeHRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="E2EFramework.TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="E2EFramework.TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="E2EFramework.TestRunner.ParallelTestNGTestRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -173,7 +192,7 @@
       </method>
     </configuration>
     <configuration name="TestNGTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumDemoOrangeHRM" />
+      <module name="SeleniumOrangeHRM" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="E2EFramework.TestRunner.*" />
@@ -182,23 +201,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="E2EFramework.TestRunner" />
       <option name="MAIN_CLASS_NAME" value="E2EFramework.TestRunner.TestNGTestRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="steps" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumOrangeHRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="E2EFramework.stepDefinitions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="E2EFramework.stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="E2EFramework.stepDefinitions.steps" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -208,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestNGTestRunner (1)" />
-        <item itemvalue="Cucumber Java.Scenario: delete employee" />
-        <item itemvalue="TestNG.steps" />
         <item itemvalue="TestNG.TestNGTestRunner" />
-        <item itemvalue="TestNG.EmployeeTCs.loginValid" />
+        <item itemvalue="TestNG.ParallelTestNGTestRunner (4)" />
+        <item itemvalue="TestNG.ParallelTestNGTestRunner" />
+        <item itemvalue="TestNG.ParallelTestNGTestRunner (3)" />
+        <item itemvalue="TestNG.ParallelTestNGTestRunner (1)" />
       </list>
     </recent_temporary>
   </component>

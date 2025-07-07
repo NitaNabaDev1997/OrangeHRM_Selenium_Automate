@@ -7,7 +7,7 @@ Background:
   And User Enters Username  "Admin" and Password  "admin123"
   And Click on Login button
 
-  @AddEmployee @LoginDataDrivenEmployee
+  @LoginDataDrivenAddEmployee
   Scenario Outline: Add New Employee in PIM Page
     When User click on PIM item
     And User click on AddEmployee tab
@@ -18,8 +18,10 @@ Background:
     Examples:
     | rowIndex |
     |        1 |
-    |        2 |
-    |        3 |
+    |         2 |
+    |          3 |
+
+
 
   @SearchEmp
   Scenario Outline: Search for a given employee
@@ -33,6 +35,7 @@ Background:
       | index |
       | 0     |
       | 1     |
+
 
 
 

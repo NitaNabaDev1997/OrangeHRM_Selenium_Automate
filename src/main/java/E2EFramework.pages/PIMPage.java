@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PIMPage extends BasePage{
-    public static WebDriver driver;
+    public WebDriver driver;
     public PIMPage(WebDriver driver)
     {
         super(driver);

@@ -21,7 +21,7 @@ public class loginsteps extends BaseTests {
 
     @When("User open URL")
     public void userOpenURL() {
-        System.out.println("Url is open in successfully"+driver.getCurrentUrl());
+        System.out.println("Url is open in successfully"+loginLogoutPage.getUrl());
         logger.info("Url is open and printed in console");
     }
 
@@ -39,7 +39,7 @@ public class loginsteps extends BaseTests {
 
     @Then("Page title should be {string}")
     public void pageTitleShouldBe(String title) {
-        String logintitle=driver.getTitle();
+        String logintitle=loginLogoutPage.getTitle();
         Assert.assertEquals(logintitle,title);
     }
 
@@ -56,6 +56,6 @@ public class loginsteps extends BaseTests {
     @Then("User should be on Login Page")
     public void landloginpage() {
        String text= loginLogoutPage.gettheText();
-        Assert.assertEquals(text,"Login","Not successfully logged out");
+        Assert.assertEquals(text,"Logini","Not successfully logged out");
     }
 }

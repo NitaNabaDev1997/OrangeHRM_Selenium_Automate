@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class SearchEmployee extends BasePage {
-    public static WebDriver driver;
+    public WebDriver driver;
     public SearchEmployee(WebDriver driver)
     {
       super(driver);

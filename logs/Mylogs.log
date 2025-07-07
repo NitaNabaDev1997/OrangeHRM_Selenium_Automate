@@ -1,8 +1,4 @@
-[INFO ] 2025-06-18 17:51:52.155 [main] BaseTests - Goto my account-->Click on Login.. 
-[INFO ] 2025-06-18 17:51:52.206 [main] BaseTests - User launches edge browser
-[INFO ] 2025-06-18 17:51:52.234 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-06-18 17:51:54.489 [main] BaseTests - login button clicked
-[INFO ] 2025-06-18 17:52:07.027 [main] BaseTests - Goto my account-->Click on Login.. 
-[INFO ] 2025-06-18 17:52:07.027 [main] BaseTests - User launches edge browser
-[INFO ] 2025-06-18 17:52:07.048 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-06-18 17:52:09.983 [main] BaseTests - login button clicked
+[INFO ] 2025-07-04 22:09:04.412 [main] BaseTests - Goto my account-->Click on Login.. 
+[INFO ] 2025-07-04 22:09:04.437 [main] BaseTests - User launches edge browser
+[INFO ] 2025-07-04 22:09:04.444 [main] BaseTests - Url is open and printed in console
+[INFO ] 2025-07-04 22:09:04.763 [main] BaseTests - login button clicked

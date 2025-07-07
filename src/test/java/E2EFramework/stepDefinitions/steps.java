@@ -1,10 +1,7 @@
 package E2EFramework.stepDefinitions;
 
 import E2EFramework.baseTest.BaseTests;
-import E2EFramework.pages.AddEmployeePage;
-import E2EFramework.pages.LoginLogoutPage;
-import E2EFramework.pages.PIMPage;
-import E2EFramework.pages.SearchEmployee;
+import E2EFramework.pages.*;
 import E2EFramework.utils.Utils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -15,12 +12,15 @@ import org.testng.Assert;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class steps extends BaseTests {
     LoginLogoutPage loginLogoutPage;
     AddEmployeePage addEmployeePage;
     SearchEmployee searchEmployee;
-    List<HashMap<String,String>> datamap;
+    ApplyLeavePage applyLeavePage;
+    LeaveListPage leaveListPage;
+    private static ThreadLocal<HashMap<String, String>> testData = new ThreadLocal<>();
  @Given("User Launch Browser")
     public void launch_browser() {
      BaseTests.getLogger().info("Goto my account-->Click on Login.. ");
@@ -30,7 +30,7 @@ public class steps extends BaseTests {
 
     @When("URL is hit")
     public void userOpenURL() {
-    System.out.println("Url is open in successfully"+driver.getCurrentUrl());
+    System.out.println("Url is open in successfully"+loginLogoutPage.getUrl());
     logger.info("Url is open and printed in console");
     }
 
@@ -48,18 +48,18 @@ public class steps extends BaseTests {
 
     @When("User click on PIM item")
     public void userClickOnPIMItem() {
-    PIMPage pimPage= new PIMPage(driver);
+    PIMPage pimPage= new PIMPage(BaseTests.getDriver());
     pimPage.clickPIMpage();
     }
 
     @And("User click on AddEmployee tab")
     public void userClickOnAddEmployeeTab() throws InterruptedException {
-       addEmployeePage=new AddEmployeePage(driver) ;
+       addEmployeePage=new AddEmployeePage(BaseTests.getDriver()) ;
         addEmployeePage.addEmployee();
     }
 
     @Then("^User fills the details of new Employee (.+) and (.+) and (.+)$")
-    public void userFillsTheDetailsOfNewEmployeeFirstnameMidnameLastname(String fname,String mname,String lname) {
+    public void userFillsTheDetailsOfNewEmployeeFirstnameMidnameLastname(String fname,String mname,String lname) throws InterruptedException {
         addEmployeePage.addemployeewithoutlogindetail(fname,mname,lname);
     }
 
@@ -70,30 +70,24 @@ public class steps extends BaseTests {
 
     @Then("User is added successfully")
     public void userIsAddedSuccessfully() {
-        //logger.info(addEmployeePage.verifysucessmsg());
         logger.info("User is added");
     }
 
 
     @And("Clicks on Employee List menu item")
     public void clicksOnEmployeeListMenuItem() {
-     searchEmployee= new SearchEmployee(driver);
+     searchEmployee= new SearchEmployee(BaseTests.getDriver());
         searchEmployee.clickemployeehistory();
     }
 
     @When("User searches for this employee from index {string}")
     public void userSearchsForThisEmployeeEmployeeName(String index) throws IOException {
         List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"/src/main/java/E2EFramework.utils/employee.json");
-       /* for (HashMap<String, String> record : data) {
-            String username = record.get("employee"); // Assuming the key in JSON is "username"
-            //System.out.println(username);
-            // Pass the username to the search method
-            searchEmployee.searchemployee(username);
-        }*/
         int index1=Integer.parseInt(index);
-        String username= data.get(index1).get("employee");
+        testData.set(data.get(index1));
+        HashMap<String, String> currentData = testData.get();
+        String username= currentData.get("employee");
         searchEmployee.searchemployee(username);
-            // Optionally add steps to verify the results for each search
     }
 
     @And("clicks on Search button")
@@ -107,13 +101,6 @@ public class steps extends BaseTests {
     public void itDisplaysResultsForEmployeeEmployeeName(String index) throws IOException {
 
         List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"/src/main/java/E2EFramework.utils/employee.json");
-        /*for (HashMap<String, String> record : data) {
-            String username = record.get("employee"); // Assuming the key in JSON is "username"
-
-            // Pass the username to the search method
-            System.out.println(searchEmployee.displayresult(username));
-        }*/
-
         int index1=Integer.parseInt(index);
         String username= data.get(index1).get("employee");
         System.out.println(searchEmployee.displayresult(username));
@@ -121,17 +108,18 @@ public class steps extends BaseTests {
 
 
     @Then("User fills the details of new Employee from excel with row {string}")
-    public void userFillsTheDetailsOfNewEmployeeFromExcelWithRowRowIndex(String row) {
+    public void userFillsTheDetailsOfNewEmployeeFromExcelWithRowRowIndex(String row) throws InterruptedException {
 
-     datamap= Utils.dataReader(System.getProperty("user.dir")+"\\testData\\EmployeeData.xlsx","Sheet1");
+     List<HashMap<String,String>> datamap= Utils.dataReader(System.getProperty("user.dir")+"\\testData\\EmployeeData.xlsx","Sheet1");
 
      int index=Integer.parseInt(row)-1;
-        //System.out.println(index);
-
-     String fname=datamap.get(index).get("firstname");
-     String midname=datamap.get(index).get("middlename");
-     String lastname=datamap.get(index).get("lastname");
-     String expresult=datamap.get(index).get("expected");
+     testData.set(datamap.get(index));
+     HashMap<String, String> currentData = testData.get();
+     
+     String fname=currentData.get("firstname");
+     String midname=currentData.get("middlename");
+     String lastname=currentData.get("lastname");
+     String expresult=currentData.get("expected");
 
      addEmployeePage.addemployeewithoutlogindetail(fname,midname,lastname);
 
@@ -146,7 +134,7 @@ public class steps extends BaseTests {
             Assert.assertTrue(true);
             }
             else
-                Assert.fail();
+                Assert.fail("Success message is null or doesn't contain 'Saved'");
          }
 
          else
@@ -155,7 +143,7 @@ public class steps extends BaseTests {
              {
                  if(msg.contains("Saved"))
                  {
-                     Assert.fail();
+                     Assert.fail("Success message is null or doesn't contain 'Saved'");
                  }
                  else
                      Assert.assertTrue(true);
@@ -164,7 +152,7 @@ public class steps extends BaseTests {
 
      }catch (Exception e)
      {
-         Assert.fail();
+         Assert.fail("Success message is null or doesn't contain 'Saved'");
      }
 
     }
@@ -188,5 +176,79 @@ public class steps extends BaseTests {
     public void recordWillBeDeleted() {
      searchEmployee.DeleteEmployee();
     }
+
+
+    @When("User click on Leave")
+    public void userClickOnLeave() {
+     applyLeavePage= new ApplyLeavePage(BaseTests.getDriver());
+     applyLeavePage.clickleave();
+    }
+
+    @And("User click on Apply Button")
+    public void userClickOnApplyButton() {
+        applyLeavePage.clickApply();
+
+        
+    }
+
+    @Then("User selects leave type {string} from dropdown")
+    public void userSelectsLeaveTypeFromDropdown(String leaveType) throws InterruptedException {
+      applyLeavePage.selectLeaveDropDown(leaveType);
+        Thread.sleep(2000);
+    }
+
+
+
+    @Then("User click on apply")
+    public void userClickOnApply() {
+
+
+    }
+
+    @And("User selects from date {string} from calendar")
+    public void userSelectsFromDateFromCalendar(String fromDate) throws InterruptedException {
+     leaveListPage.clickFromDate();
+     Thread.sleep(1000);
+    List<String> yeardatemonth=getYearDateMonthvalue(fromDate);
+    leaveListPage.selectFromToDate(yeardatemonth.get(0),yeardatemonth.get(1),yeardatemonth.get(2));
+    Thread.sleep(2000);
+
+    }
+
+    @And("User selects to date {string} from calendar")
+    public void userSelectsToDateFromCalendar(String ToDate) throws InterruptedException {
+       leaveListPage.clickToDate();
+       Thread.sleep(2000);
+       List<String> yeardatemonth=getYearDateMonthvalue(ToDate);
+        leaveListPage.selectFromToDate(yeardatemonth.get(0),yeardatemonth.get(1),yeardatemonth.get(2));
+        Thread.sleep(2000);
+    }
+
+    @And("Leave is applied successfully")
+    public void leaveIsAppliedSuccessfully() {
+    }
+
+    @And("User click on LeaveList Button")
+    public void userClickOnLeaveListButton() {
+     leaveListPage=new LeaveListPage(BaseTests.getDriver());
+     leaveListPage.clickLeaveList();
+    }
+
+    @Then("User selects leave status {string} from dropdown")
+    public void userSelectsLeaveStatusFromDropdown(String leaveStatus) throws InterruptedException {
+     leaveListPage.clickToClear();
+     leaveListPage.selectLeaveStatusDropDown(leaveStatus);
+     Thread.sleep(2000);
+    }
+
+    @Then("User click on search")
+    public void userClickOnSearch() {
+    }
+
+    @And("result is displayed successfully")
+    public void resultIsDisplayedSuccessfully() {
+    }
+
+
 
 }

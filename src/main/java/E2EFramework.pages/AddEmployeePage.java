@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class AddEmployeePage extends BasePage{
-public static WebDriver driver;
+public WebDriver driver;
     public AddEmployeePage(WebDriver driver)
     {
         super(driver);
@@ -21,11 +21,11 @@ public static WebDriver driver;
         driver.findElement(By.linkText("Add Employee")).click();
     }
 
-    public void addemployeewithoutlogindetail(String firstname,String middlename,String lastname)
-    {
+    public void addemployeewithoutlogindetail(String firstname,String middlename,String lastname) throws InterruptedException {
         driver.findElement(By.name("firstName")).sendKeys(firstname);
         driver.findElement(By.name("middleName")).sendKeys(middlename);
         driver.findElement(By.name("lastName")).sendKeys(lastname);
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 

@@ -15,7 +15,7 @@ import java.util.Properties;
 
 public class Hooks extends BaseTests {
     Properties p;
-    private WebDriver driver;
+    WebDriver driver;
     @Before
     public void setUp() throws IOException {
         driver=BaseTests.initializedriver();
@@ -36,7 +36,7 @@ public class Hooks extends BaseTests {
            }
        }*/
 
-       removeDriver();
+      BaseTests.removeDriver();
     }
 
     @AfterStep(order=1)

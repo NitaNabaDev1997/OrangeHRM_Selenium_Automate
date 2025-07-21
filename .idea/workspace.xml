@@ -5,37 +5,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0910790b-7be1-41f8-9551-4fa64555ba9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Features/LeaveManagement.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/ApplyLeavePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LeaveListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/ParallelTestNGTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Employee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Employee.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Mylogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Mylogs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/AddEmployeePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LoginLogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/LoginLogoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/PIMPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/PIMPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.pages/SearchEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/E2EFramework.utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/extent.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/TestRunner/TestNGTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/baseTest/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/baseTest/BaseTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/loginsteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/loginsteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/E2EFramework/stepDefinitions/steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-28-07/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-36-10/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-50-12/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-50-12/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-51-40/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-51-40/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-57-01/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 16-57-01/Screenshots/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 17-37-33/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 17-51-05/Report/CucumberExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 18-06-25 17-51-42/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-11-46/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-12-43/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-16-08/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-16-08/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-18-34/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-18-34/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-20-52/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 12-20-52/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 13-42-06/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 13-42-06/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-06-31/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-06-31/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-13-30/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-13-30/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-19-06/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-30-48/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-39-05/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-39-43/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-43-46/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-45-50/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 20-46-59/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-03-47/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-03-47/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-09-00/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-21-29/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-21-29/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-33-42/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-33-42/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-42-16/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-44-58/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-44-58/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-48-56/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 21-48-56/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-04-50/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-04-50/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-06-00/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-06-00/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-25-01/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-25-01/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-37-16/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-41-48/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-43-22/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-43-22/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-48-03/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-54-33/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-57-19/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 22-59-41/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-03-53/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-17-55/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-17-55/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-20-28/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-20-28/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-36-27/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-36-27/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-38-30/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-38-30/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-40-29/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-40-29/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-44-01/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-44-01/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-49-40/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-49-40/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-51-33/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-52-13/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-52-13/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-54-08/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 3-07-25 23-54-08/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 4-07-25 00-04-47/Report/CucumberExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 4-07-25 00-04-47/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 4-07-25 22-08-46/Report/CucumberExtentReport.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testData/EmployeeData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testData/EmployeeData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,26 +121,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Scenario: Testing login functionality using valid Credential.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: delete employee.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.ParallelTestNGTestRunner (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ParallelTestNGTestRunner (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ParallelTestNGTestRunner (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ParallelTestNGTestRunner (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ParallelTestNGTestRunner (5).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ParallelTestNGTestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Steps.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNGTestRunner (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNGTestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/OrangeHRM_Selenium_Automate&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Scenario: Testing login functionality using valid Credential.executor": "Run",
+    "Cucumber Java.Scenario: delete employee.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.ParallelTestNGTestRunner (1).executor": "Run",
+    "TestNG.ParallelTestNGTestRunner (2).executor": "Run",
+    "TestNG.ParallelTestNGTestRunner (3).executor": "Run",
+    "TestNG.ParallelTestNGTestRunner (4).executor": "Run",
+    "TestNG.ParallelTestNGTestRunner (5).executor": "Run",
+    "TestNG.ParallelTestNGTestRunner.executor": "Run",
+    "TestNG.Steps.executor": "Run",
+    "TestNG.TestNGTestRunner (1).executor": "Run",
+    "TestNG.TestNGTestRunner.executor": "Run",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/OrangeHRM_Selenium_Automate"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SeleniumOrangeHRM\src\test\java" />
@@ -113,7 +157,7 @@
       <recent name="E2EFramework.TestRunner" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGTestRunner">
+  <component name="RunManager" selected="TestNG.ParallelTestNGTestRunner (2)">
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="D:\OrangeHRM_Selenium_Automate" />
       <option name="GLUE" value="src/test/java/E2EFramework/stepDefinitions/Steps.java" />
@@ -123,7 +167,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelTestNGTestRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParallelTestNGTestRunner (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumOrangeHRM" />
       <extension name="coverage">
         <pattern>
@@ -210,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ParallelTestNGTestRunner (2)" />
         <item itemvalue="TestNG.TestNGTestRunner" />
         <item itemvalue="TestNG.ParallelTestNGTestRunner (4)" />
         <item itemvalue="TestNG.ParallelTestNGTestRunner" />
         <item itemvalue="TestNG.ParallelTestNGTestRunner (3)" />
-        <item itemvalue="TestNG.ParallelTestNGTestRunner (1)" />
       </list>
     </recent_temporary>
   </component>

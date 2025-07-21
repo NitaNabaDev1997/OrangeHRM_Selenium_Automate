@@ -1,4 +1,21 @@
-[INFO ] 2025-07-04 22:09:04.412 [main] BaseTests - Goto my account-->Click on Login.. 
-[INFO ] 2025-07-04 22:09:04.437 [main] BaseTests - User launches edge browser
-[INFO ] 2025-07-04 22:09:04.444 [main] BaseTests - Url is open and printed in console
-[INFO ] 2025-07-04 22:09:04.763 [main] BaseTests - login button clicked
+[INFO ] 2025-07-21 12:28:27.800 [TestNG-PoolService-1] BaseTests - Goto my account-->Click on Login.. 
+[INFO ] 2025-07-21 12:28:27.803 [TestNG-PoolService-1] BaseTests - User launches edge browser
+[INFO ] 2025-07-21 12:28:27.819 [TestNG-PoolService-1] BaseTests - Url is open and printed in console
+[INFO ] 2025-07-21 12:28:28.045 [TestNG-PoolService-0] BaseTests - Goto my account-->Click on Login.. 
+[INFO ] 2025-07-21 12:28:28.046 [TestNG-PoolService-0] BaseTests - User launches edge browser
+[INFO ] 2025-07-21 12:28:28.061 [TestNG-PoolService-0] BaseTests - Url is open and printed in console
+[INFO ] 2025-07-21 12:28:28.175 [TestNG-PoolService-2] BaseTests - login button clicked
+[INFO ] 2025-07-21 12:28:28.352 [TestNG-PoolService-1] BaseTests - login button clicked
+[INFO ] 2025-07-21 12:28:28.988 [TestNG-PoolService-0] BaseTests - login button clicked
+[DEBUG] 2025-07-21 12:28:32.979 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-07-21 12:28:32.987 [TestNG-PoolService-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2025-07-21 12:28:33.119 [TestNG-PoolService-2] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-07-21 12:28:33.123 [TestNG-PoolService-2] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2025-07-21 12:28:35.290 [TestNG-PoolService-0] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-07-21 12:28:35.294 [TestNG-PoolService-0] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[ERROR] 2025-07-21 12:28:45.901 [TestNG-PoolService-1] BaseTests - Test Failed......
+[DEBUG] 2025-07-21 12:28:45.902 [TestNG-PoolService-1] BaseTests - debug logs......
+[ERROR] 2025-07-21 12:28:45.954 [TestNG-PoolService-2] BaseTests - Test Failed......
+[DEBUG] 2025-07-21 12:28:45.954 [TestNG-PoolService-2] BaseTests - debug logs......
+[ERROR] 2025-07-21 12:28:47.889 [TestNG-PoolService-0] BaseTests - Test Failed......
+[DEBUG] 2025-07-21 12:28:47.889 [TestNG-PoolService-0] BaseTests - debug logs......

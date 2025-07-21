@@ -24,7 +24,6 @@ import java.util.Properties;
 
 public class BaseTests extends Utils{
     public static Logger logger;
-    static Properties prop;
     public static ThreadLocal<WebDriver> threadLocal= new ThreadLocal<>();
     public static WebDriver initializedriver() throws IOException {
 
@@ -43,6 +42,10 @@ public class BaseTests extends Utils{
             //WebDriverManager.chromedriver().setup();
             threadLocal.set(new ChromeDriver());
         }
+        else
+            throw new RuntimeException("Unsupported browser: "+browsername);
+
+
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return getDriver();
     }
@@ -51,7 +54,7 @@ public class BaseTests extends Utils{
     {
         FileReader file=new FileReader(System.getProperty("user.dir")+"/src/main/java/E2EFramework/resources/Config.properties");
 
-        prop=new Properties();
+        Properties prop=new Properties();
         prop.load(file);
         return prop;
     }
